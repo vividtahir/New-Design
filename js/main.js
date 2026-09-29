@@ -130,9 +130,170 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Smooth Scrolling for all in-page anchors
+  // 6. Photo Lightbox Modal
+  const lightboxModal = document.getElementById('photoLightboxModal');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxDesc = document.getElementById('lightboxDesc');
+  const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+  const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+
+  function openLightbox(trigger) {
+    if (!lightboxModal) return;
+    const fullSrc = trigger.getAttribute('data-full') || trigger.querySelector('img')?.src;
+    const title = trigger.getAttribute('data-title') || trigger.querySelector('.gallery-card-title')?.textContent;
+    const desc = trigger.getAttribute('data-desc') || trigger.querySelector('.gallery-card-desc')?.textContent;
+
+    if (lightboxImg) lightboxImg.src = fullSrc;
+    if (lightboxTitle) lightboxTitle.textContent = title || '';
+    if (lightboxDesc) lightboxDesc.textContent = desc || '';
+
+    lightboxModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  lightboxTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => openLightbox(trigger));
+  });
+
+  if (closeLightboxBtn) closeLightboxBtn.addEventListener('click', closeLightbox);
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeLightbox();
+    });
+  }
+
+  // 7. General / Destination Inquiry Modal
+  const inquiryModal = document.getElementById('inquiryModal');
+  const closeInquiryModalBtn = document.getElementById('closeInquiryModalBtn');
+  const openInquiryModalBtns = document.querySelectorAll('.open-inquiry-modal');
+  const modalDestSelect = document.getElementById('modalDestSelect');
+  const destInquiryForm = document.getElementById('destinationInquiryForm');
+
+  function openInquiryModal(btn) {
+    if (!inquiryModal) return;
+    const dest = btn?.getAttribute('data-destination');
+    if (dest && modalDestSelect) {
+      for (let i = 0; i < modalDestSelect.options.length; i++) {
+        if (modalDestSelect.options[i].value.toLowerCase().includes(dest.toLowerCase())) {
+          modalDestSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+    inquiryModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeInquiryModal() {
+    if (!inquiryModal) return;
+    inquiryModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  openInquiryModalBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      // If lightbox is open, close it
+      closeLightbox();
+      openInquiryModal(btn);
+    });
+  });
+
+  if (closeInquiryModalBtn) closeInquiryModalBtn.addEventListener('click', closeInquiryModal);
+  if (inquiryModal) {
+    inquiryModal.addEventListener('click', (e) => {
+      if (e.target === inquiryModal) closeInquiryModal();
+    });
+  }
+
+  if (destInquiryForm) {
+    destInquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const submitBtn = destInquiryForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sendi tilboðsbeiðni...</span>';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        destInquiryForm.reset();
+        closeInquiryModal();
+        showToast('Takk fyrir! Tilboðsbeiðni þín hefur verið móttekin. Við svörum innan 24 klst.');
+      }, 900);
+    });
+  }
+
+  // 8. Custom Destination Planner Form
+  const customPlannerForm = document.getElementById('customPlannerForm');
+  if (customPlannerForm) {
+    customPlannerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const dest = document.getElementById('plannerDestination')?.value || '';
+      const submitBtn = customPlannerForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sendi hugmynd...</span>';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        customPlannerForm.reset();
+        showToast(`Takk fyrir! Tillaga vegna ${dest || 'áfangastaðar'} hefur verið send.`);
+      }, 900);
+    });
+  }
+
+  // 9. Keyboard Escape handler for modals
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeLightbox();
+      closeInquiryModal();
+    }
+  });
+
+  // 10. Destination Dock active scrollspy
+  const destDockItems = document.querySelectorAll('.dest-dock-item');
+  const destSections = document.querySelectorAll('.dest-section-block');
+
+  if (destDockItems.length > 0 && destSections.length > 0) {
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      const scrollPos = window.scrollY + 180;
+
+      destSections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      if (currentSectionId) {
+        destDockItems.forEach(item => {
+          const href = item.getAttribute('href');
+          if (href === `#${currentSectionId}`) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+      }
+    });
+  }
+
+  // 11. Smooth Scrolling for all in-page anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
       if (targetId === '#' || targetId === '') return;
 
@@ -147,3 +308,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+

@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Áfangastaðir | Endurmenntunarferðir & Smart Teachers Play More</title>
+  <meta name="description"
+    content="Spennandi áfangastaðir fyrir kennarahópa og skólasamfélög í Alicante, Berlín, Gdansk, London og víðar í Evrópu. Sérsniðnar námsferðir og endurmenntun.">
+
+  <!-- Google Fonts: Outfit (headings) & Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+
+      <!-- Dual Branding -->
+      <a href="index.html" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
+        <div class="brand-logo-main">
+          <img src="assets/images/logo.svg" alt="Endurmenntunarferðir" height="42">
+        </div>
+        <div class="brand-divider"></div>
+        <div class="brand-stpm">
+          <span class="stpm-title">Smart Teachers</span>
+          <span class="stpm-sub">Play More</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Aðalvalmynd">
+        <a href="index.html" class="nav-link">Forsíða</a>
+        <a href="afangastadir.html" class="nav-link active">Áfangastaðir</a>
+        <a href="index.html#hvadaleid" class="nav-link">Hvaða leið hentar?</a>
+        <a href="index.html#afhverju" class="nav-link">Af hverju okkur?</a>
+        <a href="index.html#ferill" class="nav-link">Námskeið</a>
+        <a href="index.html#london-2026" class="nav-link">London 2026</a>
+        <a href="#samband-cta" class="nav-link">Hafa samband</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm btn-header-cta open-inquiry-modal" data-destination="Almenn fyrirspurn">
+          <span>Hafa samband</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Opna valmynd">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileBackdrop" class="mobile-drawer-backdrop"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Farsíma valmynd">
+    <div class="mobile-drawer-header">
+      <div class="brand-stpm">
+        <span class="stpm-title">Smart Teachers</span>
+        <span class="stpm-sub">Play More</span>
+      </div>
+      <button id="drawerCloseBtn" class="menu-toggle-btn" aria-label="Loka valmynd">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Forsíða</a></li>
+      <li><a href="afangastadir.html" style="color: var(--color-orange); font-weight: 700;">Áfangastaðir</a></li>
+      <li><a href="index.html#hvadaleid">Hvaða leið hentar?</a></li>
+      <li><a href="index.html#afhverju">Af hverju okkur?</a></li>
+      <li><a href="index.html#ferill">Námskeið</a></li>
+      <li><a href="index.html#london-2026">London 2026 Ráðstefna</a></li>
+      <li><a href="#samband-cta">Hafa samband</a></li>
+    </ul>
+    <div style="margin-top: auto;">
+      <button type="button" class="btn btn-primary open-inquiry-modal" style="width: 100%;" data-destination="Almenn fyrirspurn">
+        Hafa samband
+      </button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION: SPENNANDI ÁFANGASTAÐIR FYRIR HÓPINN ÞINN
+         ========================================================================= -->
+    <section class="dest-hero-section">
+      <div class="dest-hero-overlay"></div>
+
+      <div class="container dest-hero-content">
+        <div class="dest-hero-badge">
+          <i class="fa-solid fa-compass"></i>
+          <span>Sérsniðnar námsferðir og endurmenntun</span>
+        </div>
+
+        <div class="accent-underline center">
+          <h1 class="dest-hero-title">
+            Spennandi áfangastaðir fyrir hópinn þinn
+          </h1>
+        </div>
+
+        <p class="dest-hero-lead">
+          Áfangastaðir okkar eru valdir með það í huga að bjóða upp á fjölbreytta upplifun, hvort sem er í stórborgum eða minni bæjum. Við leggjum áherslu á að hver ferð sé sniðin að þörfum hópsins, með góðri blöndu af fræðslu, menningu og skemmtun. Hér að neðan má sjá nokkra af okkar vinsælustu áfangastöðum.
+        </p>
+
+        <p class="dest-hero-sublead">
+          Við getum einnig skipulagt ferðir á aðra áfangastaði ef óskað er eftir því — hafðu samband við okkur og við finnum réttu lausnina fyrir þinn hóp.
+        </p>
+
+        <!-- Trust tags in hero -->
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 10px;">
+          <span style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 9999px; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-sun" style="color: var(--color-orange); margin-right: 6px;"></i> Alicante
+          </span>
+          <span style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 9999px; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-landmark" style="color: #6CD2FF; margin-right: 6px;"></i> Berlín
+          </span>
+          <span style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 9999px; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-anchor" style="color: #FFE1A8; margin-right: 6px;"></i> Gdansk
+          </span>
+          <span style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 9999px; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-bus-simple" style="color: #FF8787; margin-right: 6px;"></i> London
+          </span>
+          <span style="background: rgba(255,255,255,0.18); backdrop-filter: blur(8px); padding: 6px 16px; border-radius: 9999px; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.25);">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #92E3A9; margin-right: 6px;"></i> Þinn óskastaður
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave Transition: Hero to Cream -->
+    <div class="wave-divider" style="margin-top: -1px;">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+        <path class="wave-cream-to-teal" style="fill: var(--color-cream);" d="M0,35 C360,70 1080,0 1440,45 L1440,70 L0,70 Z"></path>
+      </svg>
+    </div>
+
+    <!-- =========================================================================
+         QUICK DOCK: 5 DESTINATION JUMP PILLS
+         ========================================================================= -->
+    <div class="container dest-dock-container">
+      <div class="dest-dock-bar">
+
+        <a href="#alicante" class="dest-dock-item active">
+          <div class="dest-dock-icon">
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </div>
+          <span>Alicante</span>
+        </a>
+
+        <a href="#berlin" class="dest-dock-item">
+          <div class="dest-dock-icon">
+            <i class="fa-solid fa-monument"></i>
+          </div>
+          <span>Berlín</span>
+        </a>
+
+        <a href="#gdansk" class="dest-dock-item">
+          <div class="dest-dock-icon">
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <span>Gdansk</span>
+        </a>
+
+        <a href="#london" class="dest-dock-item">
+          <div class="dest-dock-icon">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <span>London</span>
+        </a>
+
+        <a href="#custom-dest" class="dest-dock-item">
+          <div class="dest-dock-icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span>Þinn óskastaður?</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         DESTINATION 1: ALICANTE
+         ========================================================================= -->
+    <section id="alicante" class="dest-section-block">
+      <div class="container">
+
+        <!-- Destination Header Row -->
+        <div class="dest-header-row">
+          <div class="dest-title-group">
+            <h2 class="dest-section-title">Alicante</h2>
+            <span class="country-pill">
+              <span>🇪🇸</span>
+              <span>Spánn</span>
+            </span>
+            <div class="dest-tags-strip">
+              <span class="dest-tag-badge highlight"><i class="fa-solid fa-sun"></i> 300+ sólardagar</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-school"></i> Skólaheimsóknir</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-heart-pulse"></i> Vellíðan & starfsdagar</span>
+            </div>
+          </div>
+
+          <div class="dest-header-actions">
+            <a href="#tilbod-modal" class="dest-explore-link open-inquiry-modal" data-destination="Alicante">
+              <span>Sjá meira um Alicante</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" data-destination="Alicante">
+              <span>Óska eftir tilboði</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Card Photo Gallery Grid (Matching user design, modernized) -->
+        <div class="gallery-4col-grid">
+
+          <!-- Card 1: Castle -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/alicante_castle_1790661964398.jpg"
+            data-title="Castillo de Santa Bárbara"
+            data-desc="Útsýni yfir borgina og Miðjarðarhafið frá hinum fornfræga kastalakletti í Alicante.">
+            <img src="assets/images/destinations/alicante_castle_1790661964398.jpg" alt="Castillo de Santa Bárbara Alicante">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Saga & Útsýni</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Santa Bárbara kastali</h3>
+              <p class="gallery-card-desc">Útsýni yfir Miðjarðarhafið og söguferð um kastalann.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Beach Letters -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/alicante_beach_1790661986760.jpg"
+            data-title="Playa del Postiguet"
+            data-desc="Gylltur sandur og Miðjarðarhafsbylgjur. Frábær vettvangur fyrir vinnustofur og útinám.">
+            <img src="assets/images/destinations/alicante_beach_1790661986760.jpg" alt="Playa del Postiguet Alicante strönd">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Sól & Strönd</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Playa del Postiguet</h3>
+              <p class="gallery-card-desc">Sól, ferskur sjór og vinnustofur í leikgleði á ströndinni.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Explanada Promenade -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/alicante_promenade_1790662008213.jpg"
+            data-title="Explanada de España"
+            data-desc="Hið heimsþekkta mósaíkgöngusvæði með 6.5 milljónum marmaraflísa og pálmatrjám.">
+            <img src="assets/images/destinations/alicante_promenade_1790662008213.jpg" alt="Explanada de España Alicante">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Menning & Göngutúrar</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Explanada de España</h3>
+              <p class="gallery-card-desc">Wavy mósaíkgöngugata, kaffihús og suðræn stemmning.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Resort Pool & Hotel Relaxation -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/alicante_resort_pool_1790662031632.jpg"
+            data-title="Gisting & Vellíðunardvöl"
+            data-desc="Úrvalshótel með sundlaug og frábærum aðbúnaði fyrir kennarahópa eftir vinnustofur dagsins.">
+            <img src="assets/images/destinations/alicante_resort_pool_1790662031632.jpg" alt="Hótel og sundlaug Alicante">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Gisting & Slökun</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Vellíðan & Samvera</h3>
+              <p class="gallery-card-desc">Fyrsta flokks aðstaða og hópefli í hlýju loftslagi.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Destination Details Strip -->
+        <div class="dest-summary-strip">
+          <div class="dest-features-row">
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-plane-departure"></i>
+              <span>Beint flug frá Íslandi til Alicante</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-hotel"></i>
+              <span>Gisting á 4* hóteli nálægt strönd</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <span>STPM leikgleðinámskeið innifalið</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-award"></i>
+              <span>Erasmus+ styrkhæft nám</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-outline btn-sm open-inquiry-modal" data-destination="Alicante">
+              <span>Fá nánari dagskrá</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DESTINATION 2: BERLÍN
+         ========================================================================= -->
+    <section id="berlin" class="dest-section-block">
+      <div class="container">
+
+        <!-- Destination Header Row -->
+        <div class="dest-header-row">
+          <div class="dest-title-group">
+            <h2 class="dest-section-title">Berlín</h2>
+            <span class="country-pill">
+              <span>🇩🇪</span>
+              <span>Þýskaland</span>
+            </span>
+            <div class="dest-tags-strip">
+              <span class="dest-tag-badge highlight"><i class="fa-solid fa-lightbulb"></i> Framsækin skólaþróun</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-masks-theater"></i> Listir & nýsköpun</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-book"></i> Saga 20. aldar</span>
+            </div>
+          </div>
+
+          <div class="dest-header-actions">
+            <a href="#tilbod-modal" class="dest-explore-link open-inquiry-modal" data-destination="Berlín">
+              <span>Sjá meira um Berlín</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" data-destination="Berlín">
+              <span>Óska eftir tilboði</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Card Photo Gallery Grid -->
+        <div class="gallery-4col-grid">
+
+          <!-- Card 1: TV Tower Sunset -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/berlin_tv_tower_1790662051366.jpg"
+            data-title="Berlínarturninn (Fernsehturm)"
+            data-desc="Alexanderplatz og Fernsehturm við stórbrotin sólarlagsliti yfir Berlín.">
+            <img src="assets/images/destinations/berlin_tv_tower_1790662051366.jpg" alt="Berlínarturninn Fernsehturm">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Kennileiti</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Sjónvarpsturninn</h3>
+              <p class="gallery-card-desc">Sólarlag yfir sögufrægri og lifandi evrópskri stórborg.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Autumn Street & Rickshaw -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/berlin_autumn_street_1790662074943.jpg"
+            data-title="Haustlitir & Menningarlíf"
+            data-desc="Fallegar götur Berlínar með gylltum linditrjám og Brandenborgarhliðið í baksýn.">
+            <img src="assets/images/destinations/berlin_autumn_street_1790662074943.jpg" alt="Berlín haustgötur og hjólat leigubíll">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Götulíf & Stemmning</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Haustlitir Berlínar</h3>
+              <p class="gallery-card-desc">Menningarlíf, heimsóknir í framsækna skóla og göngur.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Modern Architecture Potsdamer Platz -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/berlin_modern_skyline_1790662101315.jpg"
+            data-title="Potsdamer Platz & Nýsköpun"
+            data-desc="Nútímaleg hönnun og alþjóðlegt umhverfi þar sem skólaþróun og framtíð mætast.">
+            <img src="assets/images/destinations/berlin_modern_skyline_1790662101315.jpg" alt="Potsdamer Platz Berlín kvöld">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Nýsköpun & Framtíð</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Potsdamer Platz</h3>
+              <p class="gallery-card-desc">Nútíma arkitektúr, tækni og skapandi vinnustofur.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Berliner Dom & River -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/berlin_cathedral_1790662120108.jpg"
+            data-title="Berliner Dom & Spree Á"
+            data-desc="Dómkirkjan í Berlín og safnaeyjan séð frá ánni Spree með útsýnisbátum.">
+            <img src="assets/images/destinations/berlin_cathedral_1790662120108.jpg" alt="Berliner Dom og Spree á">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Saga & Söfn</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Berliner Dom & Spree</h3>
+              <p class="gallery-card-desc">Siglingar, heimsminjar og dýrmæt sögufræðsla.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Destination Details Strip -->
+        <div class="dest-summary-strip">
+          <div class="dest-features-row">
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-plane-departure"></i>
+              <span>Flug til Berlínar (BER)</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-hotel"></i>
+              <span>Vönduð hótel í miðbæ Berlínar</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-school"></i>
+              <span>Heimsóknir í nýstárlega þýska skóla</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-users"></i>
+              <span>Íslensk leiðsögn og fagstjórn</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-outline btn-sm open-inquiry-modal" data-destination="Berlín">
+              <span>Fá nánari dagskrá</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DESTINATION 3: GDANSK
+         ========================================================================= -->
+    <section id="gdansk" class="dest-section-block">
+      <div class="container">
+
+        <!-- Destination Header Row -->
+        <div class="dest-header-row">
+          <div class="dest-title-group">
+            <h2 class="dest-section-title">Gdansk</h2>
+            <span class="country-pill">
+              <span>🇵🇱</span>
+              <span>Pólland</span>
+            </span>
+            <div class="dest-tags-strip">
+              <span class="dest-tag-badge highlight"><i class="fa-solid fa-wallet"></i> Sérlega hagkvæmt</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-gem"></i> Rafverslanir & miðaldir</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-water"></i> Eystrasalt</span>
+            </div>
+          </div>
+
+          <div class="dest-header-actions">
+            <a href="#tilbod-modal" class="dest-explore-link open-inquiry-modal" data-destination="Gdansk">
+              <span>Sjá meira um Gdansk</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" data-destination="Gdansk">
+              <span>Óska eftir tilboði</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Card Photo Gallery Grid -->
+        <div class="gallery-4col-grid">
+
+          <!-- Card 1: Long Market Długi Targ -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/gdansk_long_market_1790662148394.jpg"
+            data-title="Długi Targ (Langi markaður)"
+            data-desc="Litskrúðug forn kaupmannahús og glæsileg ráðhústurninn í hjarta gamla bæjarins í Gdańsk.">
+            <img src="assets/images/destinations/gdansk_long_market_1790662148394.jpg" alt="Dlugi Targ Gdansk Langi markadur">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Gamli Bærinn</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Długi Targ markaður</h3>
+              <p class="gallery-card-desc">Litskrúðug söguhús, Neptúnusarlind og miðaldastemmning.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Mariacka Street -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/gdansk_mariacka_street_1790662173684.jpg"
+            data-title="Mariacka gatan í Gdańsk"
+            data-desc="Frægust og fallegasta gata bæjarins með steinsettum tröppum, rafverslunum og sögulegum dyrum.">
+            <img src="assets/images/destinations/gdansk_mariacka_street_1790662173684.jpg" alt="Mariacka gata Gdansk">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Saga & Handverk</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Mariacka gata</h3>
+              <p class="gallery-card-desc">Sögulegar steinhellur, fallegar verslanir og kaffihús.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Baltic Sunset Beach -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/gdansk_baltic_sunset_1790662191041.jpg"
+            data-title="Eystrasaltsströndin við Sopot & Gdańsk"
+            data-desc="Sólsetur yfir gullinni sandströndinni við Eystrasaltið — kyrrð og endurnæring.">
+            <img src="assets/images/destinations/gdansk_baltic_sunset_1790662191041.jpg" alt="Eystrasalt Gdansk strönd">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Kyrrð & Náttúra</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Eystrasaltsströnd</h3>
+              <p class="gallery-card-desc">Náttúra, hvíld og samvera eftir námskeiðisdaginn.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: St Mary's Church -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/gdansk_st_marys.jpg"
+            data-title="Maríukirkjan í Gdańsk"
+            data-desc="Ein stærsta múrsteinskirkja heims og útsýnisturn yfir allan miðbæinn.">
+            <img src="assets/images/destinations/gdansk_st_marys.jpg" alt="Maríukirkjan í Gdansk">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Byggingarlist</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Maríukirkjan</h3>
+              <p class="gallery-card-desc">Gotnesk meistaraverk, söfn og ríkuleg menning.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Destination Details Strip -->
+        <div class="dest-summary-strip">
+          <div class="dest-features-row">
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-plane-departure"></i>
+              <span>Beint flug til Gdańsk (GDN)</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-coins"></i>
+              <span>Frábært verðlag & há gæði</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-utensils"></i>
+              <span>Matargerð í hæsta gæðaflokki</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Erasmus+ styrkhæft fyrir kennara</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-outline btn-sm open-inquiry-modal" data-destination="Gdansk">
+              <span>Fá nánari dagskrá</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DESTINATION 4: LONDON
+         ========================================================================= -->
+    <section id="london" class="dest-section-block">
+      <div class="container">
+
+        <!-- Destination Header Row -->
+        <div class="dest-header-row">
+          <div class="dest-title-group">
+            <h2 class="dest-section-title">London</h2>
+            <span class="country-pill">
+              <span>🇬🇧</span>
+              <span>Bretland</span>
+            </span>
+            <div class="dest-tags-strip">
+              <span class="dest-tag-badge highlight"><i class="fa-solid fa-ticket"></i> STPM Ráðstefna 2026</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-globe"></i> Alþjóðlegur suðupottur</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-building-columns"></i> Heimssöfn</span>
+            </div>
+          </div>
+
+          <div class="dest-header-actions">
+            <a href="#tilbod-modal" class="dest-explore-link open-inquiry-modal" data-destination="London">
+              <span>Sjá meira um London</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" data-destination="London">
+              <span>Óska eftir tilboði</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Card Photo Gallery Grid -->
+        <div class="gallery-4col-grid">
+
+          <!-- Card 1: Red Double Decker Bus -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/london_bus.jpg"
+            data-title="Hinn klassíski breski strætisvagn"
+            data-desc="Rauði tvílyfti strætisvagninn við Westminster brú — táknmynd London.">
+            <img src="assets/images/destinations/london_bus.jpg" alt="Rauður tvílyftur strætisvagn í London">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Táknmynd</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Rauði tvílyfti vagninn</h3>
+              <p class="gallery-card-desc">Táknmynd stórborgarinnar og vettvangur skólaheimsókna.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Westminster & Big Ben Night -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/london_westminster_night.jpg"
+            data-title="Westminster höll & Big Ben"
+            data-desc="Breska þinghúsið og Big Ben speglast í ánni Thames í kvöldbirtunni.">
+            <img src="assets/images/destinations/london_westminster_night.jpg" alt="Westminster og Big Ben í London">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Saga & Vald</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Westminster & Big Ben</h3>
+              <p class="gallery-card-desc">Breska þingið speglast í Thames á kvöldin.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: The King's Guard -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/london_guard.jpg"
+            data-title="Konunglegi lífvörðurinn"
+            data-desc="Hinn heimsfrægi lífvörður í rauðum einkennisbúningi og bjarnarfeldshúfu.">
+            <img src="assets/images/destinations/london_guard.jpg" alt="Konunglegi lífvörðurinn í London">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Hefðir & Menning</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Konunglegur lífvörður</h3>
+              <p class="gallery-card-desc">Bresk menning, hefðir og agaður glæsileiki.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Neal's Yard / Colorful Street -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/london_neals_yard.jpg"
+            data-title="Neal's Yard & Covent Garden"
+            data-desc="Litríkur og skapandi miðbæjarkjarni með listasmiðjum, bakaríum og leikhúsum.">
+            <img src="assets/images/destinations/london_neals_yard.jpg" alt="Neals Yard Covent Garden London">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Lífsgleði & Listir</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Neal's Yard & Listir</h3>
+              <p class="gallery-card-desc">Lifandi litaflóð, listasmiðjur og West End leikhús.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Destination Details Strip -->
+        <div class="dest-summary-strip">
+          <div class="dest-features-row">
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-plane-departure"></i>
+              <span>Mörg flug á dag frá Keflavík</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-calendar-star"></i>
+              <span>STPM Ráðstefna 13.–14. nóv 2026</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-school"></i>
+              <span>Framsæknir enskir skólar</span>
+            </div>
+            <div class="dest-feature-item">
+              <i class="fa-solid fa-globe"></i>
+              <span>Alþjóðlegt tengslanet kennara</span>
+            </div>
+          </div>
+
+          <div>
+            <a href="index.html#london-2026" class="btn btn-outline btn-sm">
+              <span>Skoða London 2026</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DESTINATION 5: ÞINN ÓSKASTAÐUR?
+         ========================================================================= -->
+    <section id="custom-dest" class="dest-section-block">
+      <div class="container">
+
+        <!-- Destination Header Row -->
+        <div class="dest-header-row">
+          <div class="dest-title-group">
+            <h2 class="dest-section-title">Þinn óskastaður?</h2>
+            <span class="country-pill">
+              <span>🌍</span>
+              <span>Öll Evrópa & Ísland</span>
+            </span>
+            <div class="dest-tags-strip">
+              <span class="dest-tag-badge highlight"><i class="fa-solid fa-wand-magic-sparkles"></i> 100% sérsniðið</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-people-roof"></i> Öll skólastig</span>
+              <span class="dest-tag-badge"><i class="fa-solid fa-shield-halved"></i> 15 ára reynsla</span>
+            </div>
+          </div>
+
+          <div class="dest-header-actions">
+            <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Sérsniðinn áfangastaður">
+              <span>Hafa samband</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4-Card Photo Gallery Grid: Inspiration -->
+        <div class="gallery-4col-grid">
+
+          <!-- Card 1: European City Lights -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/custom_city_lights.jpg"
+            data-title="Evrópskar stórborgir"
+            data-desc="París, Róm, Vín, Amsterdam, Prag eða Edinborg — við skipuleggjum ferðina fyrir þinn hóp.">
+            <img src="assets/images/destinations/custom_city_lights.jpg" alt="Evrópskar stórborgir námsferð">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Stórborgir</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Evrópskar stórborgir</h3>
+              <p class="gallery-card-desc">París, Róm, Vín eða hvaða áfangastaður sem er í Evrópu.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Night Skyline -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/custom_night_skyline.jpg"
+            data-title="Lýstar borgir & Menningarferðir"
+            data-desc="Menning, listasöfn, vísindamiðstöðvar og skólar sem veita innblástur.">
+            <img src="assets/images/destinations/custom_night_skyline.jpg" alt="Menning og kvöldstemmning í Evrópu">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Menningarheimur</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Menning & Innblástur</h3>
+              <p class="gallery-card-desc">Sérsniðið námskeiðshald að ykkar sérstöku áherslum.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Canals & Architecture -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/custom_canals.jpg"
+            data-title="Söguleg síki & Norðurlönd"
+            data-desc="Kaupmannahöfn, Stokkhólmur, Osló, Amsterdam eða Hamborg með áherslu á skólaþróun.">
+            <img src="assets/images/destinations/custom_canals.jpg" alt="Síki og vatnaborgir í Evrópu">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Vatnaborgir</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Síki & Norðurlönd</h3>
+              <p class="gallery-card-desc">Kaupmannahöfn, Stokkhólmur eða Amsterdam.</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Sunny Resort & Relaxation -->
+          <div class="gallery-card lightbox-trigger"
+            data-full="assets/images/destinations/custom_resort.jpg"
+            data-title="Sól, heilsa og endurnæring"
+            data-desc="Portúgal, Barcelona, Malaga, Krít eða Sikiley — blanda af vinnustofum og hvíld.">
+            <img src="assets/images/destinations/custom_resort.jpg" alt="Sólríkir staðir við Miðjarðarhaf">
+            <div class="gallery-card-gradient"></div>
+            <span class="gallery-card-top-tag">Sól & Vellíðan</span>
+            <div class="gallery-card-expand-btn">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <div class="gallery-card-info">
+              <h3 class="gallery-card-title">Miðjarðarhaf & Eyjar</h3>
+              <p class="gallery-card-desc">Portúgal, Kanaríeyjar, Krít eða Sikiley.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Custom Destination Planner Card -->
+        <div class="custom-dest-wrapper">
+          <div class="custom-dest-grid">
+
+            <div>
+              <div class="hero-badge-partner" style="background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); margin-bottom: 16px;">
+                <i class="fa-solid fa-map-location-dot" style="color: var(--color-orange);"></i>
+                <span style="color: #FFF2D6;">Sérsniðin lausn fyrir þinn hóp</span>
+              </div>
+              <h3 style="font-size: clamp(1.8rem, 2.8vw, 2.4rem); color: #FFFFFF; font-weight: 800; margin-bottom: 16px;">
+                Ertu með sérstakan áfangastað í huga?
+              </h3>
+              <p style="font-size: 1.05rem; line-height: 1.7; color: rgba(255, 255, 255, 0.9); margin-bottom: 24px;">
+                Við höfum yfir 15 ára reynslu af því að skipuleggja ferðir út um alla Evrópu sem og innanlands á Íslandi. Segðu okkur hvað ykkur langar og við setjum saman ókeypis og skuldbindingarlausa tillögu sem smellpassar við ykkar skóla.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 10px; color: #FFF2D6;">
+                  <i class="fa-solid fa-check-circle" style="color: var(--color-orange);"></i>
+                  <span>Heildarferðir frá A til Ö eða eingöngu námskeiðshald</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; color: #FFF2D6;">
+                  <i class="fa-solid fa-check-circle" style="color: var(--color-orange);"></i>
+                  <span>Aðstoð við umsóknir um Erasmus+ styrki</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px; color: #FFF2D6;">
+                  <i class="fa-solid fa-check-circle" style="color: var(--color-orange);"></i>
+                  <span>Gæðatengslanet við skóla víðsvegar um álfuna</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Destination Quick Request Form -->
+            <div class="custom-dest-form">
+              <h4 style="font-size: 1.25rem; font-weight: 700; color: #FFFFFF; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-paper-plane" style="color: var(--color-orange);"></i>
+                <span>Senda fyrirspurn</span>
+              </h4>
+
+              <form id="customPlannerForm">
+                <div class="custom-form-grid">
+                  <div class="custom-form-group">
+                    <label class="custom-form-label" for="plannerDestination">Óskastaður</label>
+                    <input type="text" id="plannerDestination" class="custom-form-input" placeholder="T.d. Róm, París, Akureyri..." required>
+                  </div>
+
+                  <div class="custom-form-group">
+                    <label class="custom-form-label" for="plannerGroupSize">Áætlaður fjöldi</label>
+                    <select id="plannerGroupSize" class="custom-form-select">
+                      <option value="10-20">10–20 manns</option>
+                      <option value="20-40" selected>20–40 manns</option>
+                      <option value="40-70">40–70 manns</option>
+                      <option value="70+">70+ manns</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-form-group">
+                    <label class="custom-form-label" for="plannerSchoolType">Tegund hóps</label>
+                    <select id="plannerSchoolType" class="custom-form-select">
+                      <option value="Grunnskóli">Grunnskóli</option>
+                      <option value="Leikskóli">Leikskóli</option>
+                      <option value="Framhaldsskóli">Framhaldsskóli</option>
+                      <option value="Skólastjórnendur">Skólastjórnendur</option>
+                      <option value="Annar hópur">Annar hópur</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-form-group">
+                    <label class="custom-form-label" for="plannerTime">Áætlaður tími</label>
+                    <select id="plannerTime" class="custom-form-select">
+                      <option value="Vor 2025">Vor 2025</option>
+                      <option value="Haust 2025">Haust 2025</option>
+                      <option value="Vor 2026">Vor 2026</option>
+                      <option value="Haust 2026">Haust 2026</option>
+                    </select>
+                  </div>
+
+                  <div class="custom-form-group full-width">
+                    <label class="custom-form-label" for="plannerContact">Netfang eða símanúmer tengiliðs</label>
+                    <input type="text" id="plannerContact" class="custom-form-input" placeholder="t.d. skoli@skoli.is / 555 1234" required>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                  <span>Fá ókeypis tillögu og tilboð</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROCESS ROADMAP: 4 STEPS TO A PERFECT TRIP
+         ========================================================================= -->
+    <section class="process-section">
+      <div class="container">
+
+        <div class="text-center" style="max-width: 680px; margin: 0 auto 36px auto;">
+          <div class="accent-underline center">
+            <h2 class="heading-section">Hvernig virkar ferlið?</h2>
+          </div>
+          <p class="text-lead" style="font-size: 1.05rem;">
+            Við gerum skipulagningu námsferða einfalda, faglega og án alls óþarfa álags fyrir skólann.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <!-- Step 1 -->
+          <div class="process-card">
+            <div class="process-num-badge">1</div>
+            <h3 class="process-card-title">Hugmynd & þarfagreining</h3>
+            <p class="process-card-desc">
+              Við ræðum markmið ferðarinnar, fjölda, áherslur í skólastarfi og óskir um áfangastað.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card">
+            <div class="process-num-badge">2</div>
+            <h3 class="process-card-title">Sérsniðin tillaga</h3>
+            <p class="process-card-desc">
+              Við setjum saman heildstæða dagskrá með flugi, gistingu, námskeiðum og skólaheimsóknum.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card">
+            <div class="process-num-badge">3</div>
+            <h3 class="process-card-title">Erasmus+ & kynning</h3>
+            <p class="process-card-desc">
+              Við aðstoðum við styrkumsóknir, kynningu fyrir starfsfólki og alla undirbúningsþætti.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-card">
+            <div class="process-num-badge">4</div>
+            <h3 class="process-card-title">Ógleymanleg námsferð</h3>
+            <p class="process-card-desc">
+              Þið njótið ferðarinnar á meðan við sjáum um framkvæmd, faglega vinnu og fararstjórn.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CALL TO ACTION BANNER: "VILTU VITA MEIRA?" (MATCHING USER SCREENSHOT)
+         ========================================================================= -->
+    <section id="samband-cta" class="cta-banner-section">
+      <div class="container">
+
+        <div class="cta-banner-card">
+          <div class="cta-banner-overlay"></div>
+
+          <div class="cta-banner-inner">
+            <h2 class="cta-banner-title">Viltu vita meira?</h2>
+            <p class="cta-banner-desc">
+              Hafðu samband við okkur í dag og við hjálpum þér að skipuleggja ógleymanlega ferð fyrir þinn hóp.
+            </p>
+
+            <div class="cta-banner-actions">
+              <button type="button" class="btn-cta-white open-inquiry-modal" data-destination="Almenn fyrirspurn">
+                <span>Hafa samband</span>
+                <span class="icon-circle">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </button>
+
+              <a href="tel:8990769" class="btn btn-outline-white">
+                <i class="fa-solid fa-phone" style="color: var(--color-orange);"></i>
+                <span>Hringja í 899 0769</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Mission -->
+        <div class="footer-brand-col">
+          <div class="brand-group" style="margin-bottom: 20px;">
+            <div class="brand-logo-main">
+              <img src="assets/images/logo-white.svg" alt="Endurmenntunarferðir" height="42">
+            </div>
+            <div class="brand-divider" style="background-color: rgba(255, 255, 255, 0.2);"></div>
+            <div class="brand-stpm">
+              <span class="stpm-title" style="color: var(--color-white);">Smart Teachers</span>
+              <span class="stpm-sub" style="color: var(--color-orange);">Play More</span>
+            </div>
+          </div>
+
+          <p class="footer-lead-text">
+            Sérsniðnar námsferðir og gæðaendurmenntun fyrir kennara og skólasamfélög í Evrópu og á Íslandi.
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Flýtileiðir -->
+        <div>
+          <h4 class="footer-heading">Flýtileiðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="afangastadir.html">Áfangastaðir</a></li>
+            <li><a href="index.html#hvadaleid">Hvaða leið hentar?</a></li>
+            <li><a href="index.html#afhverju">Af hverju okkur?</a></li>
+            <li><a href="index.html#ferill">Námskeið</a></li>
+            <li><a href="index.html#london-2026">London 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Áfangastaðir -->
+        <div>
+          <h4 class="footer-heading">Áfangastaðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="#alicante">Alicante, Spánn</a></li>
+            <li><a href="#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="#gdansk">Gdańsk, Pólland</a></li>
+            <li><a href="#london">London, Bretland</a></li>
+            <li><a href="#custom-dest">Þinn óskastaður</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Hafa samband -->
+        <div>
+          <h4 class="footer-heading">Hafa samband</h4>
+          <ul class="footer-links-list">
+            <li>
+              <i class="fa-solid fa-phone" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="tel:8990769">899 0769</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:nonni@smartteachersplaymore.com">nonni@smartteachersplaymore.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:sarah@smartteachersplaymore.com">sarah@smartteachersplaymore.com</a>
+            </li>
+            <li style="margin-top: 14px;">
+              <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); display: block;">
+                Evrópskur gæðastaðall í kennaramenntun
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Endurmenntunarferðir & Smart Teachers Play More. Allur réttur áskilinn.
+        </div>
+        <div>
+          Hannað með áherslu á skólaþróun, vellíðan og leikgleði.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       PHOTO LIGHTBOX MODAL
+       ========================================================================= -->
+  <div id="photoLightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Myndastækkun">
+    <div class="lightbox-dialog">
+      <button id="closeLightboxBtn" class="lightbox-close-btn" aria-label="Loka myndaglugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="">
+      </div>
+
+      <div class="lightbox-footer">
+        <div>
+          <h4 id="lightboxTitle" class="lightbox-title"></h4>
+          <p id="lightboxDesc" class="lightbox-desc"></p>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" id="lightboxCtaBtn">
+            <span>Óska eftir tilboði</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       INQUIRY / BOOKING MODAL
+       ========================================================================= -->
+  <div id="inquiryModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalInquiryTitle">
+    <div class="modal-window">
+      <button id="closeInquiryModalBtn" class="modal-close-btn" aria-label="Loka glugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="margin-bottom: 20px;">
+        <span class="conf-tag" style="margin-bottom: 8px;">
+          <span>Óskuldbindandi tilboð</span>
+        </span>
+        <h3 id="modalInquiryTitle" style="font-size: 1.6rem; color: var(--color-navy); margin-bottom: 6px;">
+          Hafa samband & óska eftir tilboði
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          Við setjum saman sérsniðna dagskrá og tilboð fyrir þinn hóp innan 24 stunda.
+        </p>
+      </div>
+
+      <form id="destinationInquiryForm" class="inquiry-form" style="grid-template-columns: 1fr 1fr; gap: 14px;">
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="modalDestSelect">Áfangastaður sem vekur áhuga</label>
+          <select id="modalDestSelect" class="form-input" required>
+            <option value="Alicante">Alicante, Spánn</option>
+            <option value="Berlín">Berlín, Þýskaland</option>
+            <option value="Gdansk">Gdańsk, Pólland</option>
+            <option value="London">London, Bretland</option>
+            <option value="Sérsniðinn áfangastaður">Sérsniðinn áfangastaður / Annað</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqName">Nafn tengiliðs</label>
+          <input type="text" id="inqName" class="form-input" placeholder="T.d. Guðrún Jónsdóttir" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqSchool">Skóli / Stofnun</label>
+          <input type="text" id="inqSchool" class="form-input" placeholder="T.d. Laugalækjarskóli" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqEmail">Netfang</label>
+          <input type="email" id="inqEmail" class="form-input" placeholder="gudrun@skoli.is" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqPhone">Símanúmer</label>
+          <input type="tel" id="inqPhone" class="form-input" placeholder="899 0000" required>
+        </div>
+
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="inqNotes">Óskir um dagsetningar, fjölda eða áherslur (valfrjálst)</label>
+          <textarea id="inqNotes" class="form-input" rows="3" placeholder="T.d. 25 kennarar í vorferð 2026 með áherslu á útinám og skólaheimsóknir..."></textarea>
+        </div>
+
+        <div style="grid-column: 1 / -1; margin-top: 8px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Senda inn fyrirspurn</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <i class="fa-solid fa-circle-check" style="color: var(--color-green); font-size: 1.25rem;"></i>
+    <span id="toastMessage">Takk fyrir! Við höfum samband fljótlega.</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
