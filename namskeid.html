@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Námskeið fyrir kennara | Endurmenntunarferðir & Smart Teachers Play More</title>
+  <meta name="description" content="Fjölbreytt námskeið fyrir kennara og skólasamfélög. Verkefnamiðað nám (PBL), núvitund, skapandi kennsluhættir, siðfræði, hópefli og hreyfinám.">
+  <meta name="keywords" content="námskeið fyrir kennara, endurmenntun kennara, PBL nám, núvitund í skólum, Smart Teachers Play More, leikgleði, hópefli kennara">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Námskeið fyrir kennara | Endurmenntunarferðir & STPM">
+  <meta property="og:description" content="Sérsniðin námskeið og vinnustofur í Evrópu eða beint í þinn skóla. 12+ viðurkennd námskeið.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/courses/course_project_balloon_1790750899569.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-courses">
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION (CANONICAL 5-ITEM MENU)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+
+      <!-- Dual Branding -->
+      <a href="index.html" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
+        <div class="brand-logo-main">
+          <img src="assets/images/logo.svg" alt="Endurmenntunarferðir" height="42">
+        </div>
+        <div class="brand-divider"></div>
+        <div class="brand-stpm">
+          <span class="stpm-title">Smart Teachers</span>
+          <span class="stpm-sub">Play More</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Aðalvalmynd">
+        <a href="index.html" class="nav-link">Forsíða</a>
+        <a href="afangastadir.html" class="nav-link">Áfangastaðir</a>
+        <a href="namskeid.html" class="nav-link active">Námskeið</a>
+        <a href="index.html#afhverju" class="nav-link">Um okkur</a>
+        <a href="#samband-cta" class="nav-link">Hafa samband</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm btn-header-cta open-inquiry-modal" data-destination="Almenn fyrirspurn">
+          <span>Fá tilboð</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Opna valmynd">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileBackdrop" class="mobile-drawer-backdrop"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Farsíma valmynd">
+    <div class="mobile-drawer-header">
+      <div class="brand-stpm">
+        <span class="stpm-title">Smart Teachers</span>
+        <span class="stpm-sub">Play More</span>
+      </div>
+      <button id="drawerCloseBtn" class="menu-toggle-btn" aria-label="Loka valmynd">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Forsíða</a></li>
+      <li><a href="afangastadir.html">Áfangastaðir</a></li>
+      <li><a href="namskeid.html" class="active">Námskeið</a></li>
+      <li><a href="index.html#afhverju">Um okkur</a></li>
+      <li><a href="#samband-cta">Hafa samband</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Almenn fyrirspurn" style="width: 100%; justify-content: center;">
+        <span>Fá tilboð</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         COURSES HERO SECTION
+         ========================================================================= -->
+    <section class="courses-hero-section">
+      <div class="courses-hero-bg">
+        <img src="assets/images/courses/cta_teachers_group.jpg" alt="Kennarahópur í námsferð" class="courses-hero-img">
+      </div>
+      <div class="courses-hero-overlay"></div>
+
+      <div class="container courses-hero-container">
+        <div class="courses-hero-badge">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Fagleg endurmenntun og leikgleði</span>
+        </div>
+
+        <h1 class="courses-hero-title">Námskeið fyrir kennara og starfsfólk skóla</h1>
+
+        <p class="courses-hero-lead">
+          Fjölbreytt námskeiðsframboð sem styður skólaþróun, vellíðan og hagnýta kennsluhætti. 
+          Hægt er að velja námskeið sem hluta af utanlandsferð eða fá okkur í skólann þinn.
+        </p>
+
+        <div class="courses-hero-stats">
+          <div class="courses-hero-stat-item">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <div>
+              <strong>12+ námskeið</strong>
+              <span>Gagnreyndar aðferðir</span>
+            </div>
+          </div>
+          <div class="courses-hero-stat-item">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <div>
+              <strong>Fagkennarar</strong>
+              <span>Reyndir fyrirlesarar</span>
+            </div>
+          </div>
+          <div class="courses-hero-stat-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>3–6 klst.</strong>
+              <span>Sveigjanlegar einingar</span>
+            </div>
+          </div>
+          <div class="courses-hero-stat-item">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Erasmus+ hæft</strong>
+              <span>Vottað námsefni</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         COURSES FILTER & SEARCH SECTION
+         ========================================================================= -->
+    <section class="courses-filter-section">
+      <div class="container">
+        <div class="courses-filter-bar">
+          
+          <!-- Category Filters -->
+          <div class="courses-category-filters" role="tablist" aria-label="Flokkar námskeiða">
+            <button type="button" class="course-filter-btn active" data-category="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-border-all"></i>
+              <span>Öll námskeið</span>
+            </button>
+            <button type="button" class="course-filter-btn" data-category="kennsla" role="tab" aria-selected="false">
+              <i class="fa-solid fa-shapes"></i>
+              <span>Kennsluhættir & PBL</span>
+            </button>
+            <button type="button" class="course-filter-btn" data-category="velliðan" role="tab" aria-selected="false">
+              <i class="fa-solid fa-spa"></i>
+              <span>Vellíðan & núvitund</span>
+            </button>
+            <button type="button" class="course-filter-btn" data-category="sidfraedi" role="tab" aria-selected="false">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span>Siðfræði & hegðun</span>
+            </button>
+            <button type="button" class="course-filter-btn" data-category="hopefli" role="tab" aria-selected="false">
+              <i class="fa-solid fa-people-group"></i>
+              <span>Hópefli & leikur</span>
+            </button>
+          </div>
+
+          <!-- Real-Time Search Box -->
+          <div class="courses-search-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="search" id="courseSearchInput" class="courses-search-input" placeholder="Leita að námskeiði eða leiðbeinanda..." aria-label="Leita í námskeiðum">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         COURSES GRID (12 AUTHENTIC CARDS MATCHING THE SCREENSHOT)
+         ========================================================================= -->
+    <section class="courses-grid-section">
+      <div class="container">
+
+        <div id="coursesGrid" class="courses-grid">
+
+          <!-- Card 1: Verkefnamiðað nám (PBL) -->
+          <article class="course-card" data-category="kennsla">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_project_balloon_1790750899569.jpg" alt="Verkefnamiðað nám (PBL)" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Kennsluhættir</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Verkefnamiðað nám (PBL)</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Smart Teachers Play More teymið</span>
+              </div>
+              <p class="course-card-desc">
+                Hagnýt nálgun við að skipuleggja og framkvæma verkefnamiðað nám þar sem nemendur eru virkir þátttakendur, leysa raunveruleg verkefni og dýpka skilning sinn.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Verkefnamiðað nám (PBL)">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Hamingjan, styrkleikar og hópefli -->
+          <article class="course-card" data-category="hopefli">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_teachers_travel.png" alt="Hamingjan, styrkleikar og hópefli" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Hópefli & vellíðan</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Hamingjan, styrkleikar og hópefli</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Sérfræðingar í jákvæðri sálfræði</span>
+              </div>
+              <p class="course-card-desc">
+                Námskeið sem eflir jákvæðan skólabrag, samvinnu starfsfólks og kennir aðferðir jákvæðrar sálfræði til að virkja styrkleika hvers og eins í skólastarfinu.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Hamingjan, styrkleikar og hópefli">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Skapandi kennsluhættir og leikgleði -->
+          <article class="course-card" data-category="kennsla">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_play_learning.png" alt="Skapandi kennsluhættir og leikgleði" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">STPM aðferðafræði</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Skapandi kennsluhættir og leikgleði</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Sarah & STPM kennarar</span>
+              </div>
+              <p class="course-card-desc">
+                Upprunalega aðferðafræði Smart Teachers Play More þar sem leikur, hreyfing og sköpun eru samofin öllum námsgreinum fyrir aukna virkni og gleði.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Skapandi kennsluhættir og leikgleði">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Kynning á núvitund og hugleiðsluaðferðum -->
+          <article class="course-card" data-category="velliðan">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_mindfulness_zen_1790750949727.jpg" alt="Kynning á núvitund og hugleiðsluaðferðum" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Vellíðan & núvitund</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Kynning á núvitund og hugleiðsluaðferðum</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Vottaðir núvitundarkennarar</span>
+              </div>
+              <p class="course-card-desc">
+                Aðferðir til að draga úr streitu í skólastarfi, efla einbeitingu nemenda og skapa rólegt og styðjandi námsumhverfi í skólastofunni.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Kynning á núvitund og hugleiðsluaðferðum">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Evrópskar skólaheimsóknir & Erasmus+ -->
+          <article class="course-card" data-category="kennsla">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_school_visits.png" alt="Evrópskar skólaheimsóknir & Erasmus+" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Alþjóðastarf</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3–6 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Evrópskar skólaheimsóknir & Erasmus+</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Alþjóðlegir samstarfsaðilar</span>
+              </div>
+              <p class="course-card-desc">
+                Kynning á evrópskum kennsluháttum, skólaheimsóknir á staðnum og hagnýt leiðsögn um hvernig nýta má Erasmus+ styrki til áframhaldandi skólaþróunar.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Evrópskar skólaheimsóknir & Erasmus+">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 6: Menningarupplifun og sögulegt nám -->
+          <article class="course-card" data-category="kennsla">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_gdansk.jpg" alt="Menningarupplifun og sögulegt nám" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Útinám & menning</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Menningarupplifun og sögulegt nám</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Staðbundnir fagsérfræðingar</span>
+              </div>
+              <p class="course-card-desc">
+                Hvernig nota má sögu, arkitektúr og menningu áfangastaðarins sem lifandi kennslustofu fyrir þverfagleg verkefni nemenda og starfsfólks.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Menningarupplifun og sögulegt nám">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 7: Hópefli og teymisvinna starfsfólks -->
+          <article class="course-card" data-category="hopefli">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_team_hands_1790751477375.jpg" alt="Hópefli og teymisvinna starfsfólks" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Teymisvinna</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Hópefli og teymisvinna starfsfólks</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>STPM teymisþjálfarar</span>
+              </div>
+              <p class="course-card-desc">
+                Öflug vinnustofa sem eflir samstöðu, traust og vinnugleði starfsmannahópsins með gagnvirkum hópeflisæfingum og uppbyggilegum umræðum.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Hópefli og teymisvinna starfsfólks">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 8: Jóga fyrir nemendur og kennara -->
+          <article class="course-card" data-category="velliðan">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_alicante.jpg" alt="Jóga fyrir nemendur og kennara" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Vellíðan & heilsa</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Jóga fyrir nemendur og kennara</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Kennari: Berglind Ýr Karlsdóttir</span>
+              </div>
+              <p class="course-card-desc">
+                Einfaldar jóga- og öndunaræfingar sem henta öllum aldurshópum. Kennir aðferðir til að endurheimta orku og efla líkamlega og andlega vellíðan.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Jóga fyrir nemendur og kennara">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 9: Hagnýt siðfræði í uppeldisstörfum -->
+          <article class="course-card" data-category="sidfraedi">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_berlin.jpg" alt="Hagnýt siðfræði í uppeldisstörfum" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Siðfræði</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Hagnýt siðfræði í uppeldisstörfum</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Kennari: Jóhann Björnsson</span>
+              </div>
+              <p class="course-card-desc">
+                Dýpkun á siðferðilegum álitamálum í daglegu starfi kennara. Hvernig nálgumst við flóknar aðstæður af fagmennsku, virðingu og sanngirni.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Hagnýt siðfræði í uppeldisstörfum">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 10: Leikur og hreyfing í námi (STPM) -->
+          <article class="course-card" data-category="hopefli">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_london.jpg" alt="Leikur og hreyfing í námi" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Hreyfinám</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Leikur og hreyfing í námi (STPM)</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Smart Teachers Play More teymið</span>
+              </div>
+              <p class="course-card-desc">
+                „Move the body, engage the mind“. Hagnýtar aðferðir til að samþætta hreyfingu inn í hefðbundna kennslu án þess að missa aga eða fókus.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Leikur og hreyfing í námi (STPM)">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 11: Gagnrýnin hugsun og heimspeki í skólastarfi -->
+          <article class="course-card" data-category="sidfraedi">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_thinker_statue_1790750981430.jpg" alt="Gagnrýnin hugsun og heimspeki í skólastarfi" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Gagnrýnin hugsun</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Gagnrýnin hugsun og heimspeki</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Umsjón: Jóhann Björnsson</span>
+              </div>
+              <p class="course-card-desc">
+                Aðferðir til að þjálfa nemendur í að spyrja djúpra spurninga, rökstyðja skoðanir sínar og vinna saman í uppbyggilegum heimspekilegum samræðum.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Gagnrýnin hugsun og heimspeki í skólastarfi">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 12: Hegðun og úrræði í skólastarfi -->
+          <article class="course-card" data-category="sidfraedi">
+            <div class="course-card-image-wrap">
+              <img src="assets/images/courses/course_canals.jpg" alt="Hegðun og úrræði í skólastarfi" class="course-card-img" loading="lazy">
+              <span class="course-card-badge">Hegðunarstjórnun</span>
+              <span class="course-card-duration"><i class="fa-regular fa-clock"></i> 3 klst.</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-card-title">Hegðun og úrræði í skólastarfi</h3>
+              <div class="course-card-lecturer">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>Kennari: Elvar Jónsson</span>
+              </div>
+              <p class="course-card-desc">
+                Gagnreyndar aðferðir og hagnýt úrræði til að bregðast við krefjandi hegðun í skólastofunni og styðja nemendur með sérþarfir á uppbyggilegan hátt.
+              </p>
+            </div>
+            <div class="course-card-footer">
+              <button type="button" class="course-inquire-btn open-inquiry-modal" data-destination="Hegðun og úrræði í skólastarfi">
+                <span>Óska eftir tilboði</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Message (Hidden by default) -->
+        <div id="noCoursesMessage" class="no-courses-found" style="display: none;">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3>Ekkert námskeið fannst</h3>
+          <p>Prófaðu að leita með öðru leitarorði eða veldu annan flokk hér að ofan.</p>
+          <button type="button" id="resetCoursesFilterBtn" class="btn btn-secondary btn-sm" style="margin-top: 16px;">
+            <span>Sýna öll námskeið</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         BOTTOM CTA BANNER (MATCHES THE SCREENSHOT PHOTO BANNER)
+         ========================================================================= -->
+    <section id="samband-cta" class="courses-bottom-cta">
+      <div class="courses-bottom-cta-bg">
+        <img src="assets/images/courses/cta_teachers_group.jpg" alt="Kennarahópur" class="courses-bottom-cta-img">
+      </div>
+      <div class="courses-bottom-cta-overlay"></div>
+
+      <div class="container courses-bottom-cta-container">
+        <span class="conf-tag" style="background: rgba(255, 112, 67, 0.2); color: #ffab91; border-color: rgba(255, 112, 67, 0.4); margin-bottom: 16px;">
+          <span>Sérsniðnar vinnustofur</span>
+        </span>
+
+        <h2 class="courses-bottom-cta-title">Viltu vita meira eða óska eftir sérsniðnu námskeiði?</h2>
+
+        <p class="courses-bottom-cta-lead">
+          Við sníðum námskeið og vinnustofur að sérstökum áherslum og markmiðum þíns skóla. 
+          Hafðu samband við okkur og við svörum með hugmyndum og tilboði innan 24 stunda.
+        </p>
+
+        <div class="courses-bottom-cta-actions">
+          <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Sérsniðið námskeið">
+            <span>Hafa samband</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <a href="tel:8990769" class="btn btn-secondary">
+            <i class="fa-solid fa-phone"></i>
+            <span>Hringja í 899 0769</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-brand-col">
+          <div class="brand-group" style="margin-bottom: 20px;">
+            <div class="brand-logo-main">
+              <img src="assets/images/logo.svg" alt="Endurmenntunarferðir" height="38">
+            </div>
+            <div class="brand-divider"></div>
+            <div class="brand-stpm">
+              <span class="stpm-title" style="color: var(--color-white);">Smart Teachers</span>
+              <span class="stpm-sub" style="color: var(--color-orange);">Play More</span>
+            </div>
+          </div>
+
+          <p class="footer-lead-text">
+            Sérsniðnar námsferðir og gæðaendurmenntun fyrir kennara og skólasamfélög í Evrópu og á Íslandi.
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Flýtileiðir -->
+        <div>
+          <h4 class="footer-heading">Flýtileiðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="afangastadir.html">Áfangastaðir</a></li>
+            <li><a href="namskeid.html">Námskeið</a></li>
+            <li><a href="index.html#afhverju">Af hverju okkur?</a></li>
+            <li><a href="index.html#skipulagid">Skipulagið</a></li>
+            <li><a href="index.html#london-2026">London 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Áfangastaðir -->
+        <div>
+          <h4 class="footer-heading">Áfangastaðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="afangastadir.html#alicante">Alicante, Spánn</a></li>
+            <li><a href="afangastadir.html#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="afangastadir.html#gdansk">Gdańsk, Pólland</a></li>
+            <li><a href="afangastadir.html#london">London, Bretland</a></li>
+            <li><a href="afangastadir.html#custom-dest">Þinn óskastaður</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Hafa samband -->
+        <div>
+          <h4 class="footer-heading">Hafa samband</h4>
+          <ul class="footer-links-list">
+            <li>
+              <i class="fa-solid fa-phone" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="tel:8990769">899 0769</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:nonni@smartteachersplaymore.com">nonni@smartteachersplaymore.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:sarah@smartteachersplaymore.com">sarah@smartteachersplaymore.com</a>
+            </li>
+            <li style="margin-top: 14px;">
+              <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); display: block;">
+                Evrópskur gæðastaðall í kennaramenntun
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Endurmenntunarferðir & Smart Teachers Play More. Allur réttur áskilinn.
+        </div>
+        <div>
+          Hannað með áherslu á skólaþróun, vellíðan og leikgleði.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       INQUIRY / BOOKING MODAL
+       ========================================================================= -->
+  <div id="inquiryModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalInquiryTitle">
+    <div class="modal-window">
+      <button id="closeInquiryModalBtn" class="modal-close-btn" aria-label="Loka glugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="margin-bottom: 20px;">
+        <span class="conf-tag" style="margin-bottom: 8px;">
+          <span>Óskuldbindandi tilboð</span>
+        </span>
+        <h3 id="modalInquiryTitle" style="font-size: 1.6rem; color: var(--color-navy); margin-bottom: 6px;">
+          Óska eftir tilboði í námskeið
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          Við setjum saman sérsniðna dagskrá og tilboð fyrir þinn skóla eða hóp innan 24 stunda.
+        </p>
+      </div>
+
+      <form id="destinationInquiryForm" class="inquiry-form" style="grid-template-columns: 1fr 1fr; gap: 14px;">
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="modalDestSelect">Námskeið eða áfangastaður sem vekur áhuga</label>
+          <select id="modalDestSelect" class="form-input" required>
+            <option value="Verkefnamiðað nám (PBL)">Verkefnamiðað nám (PBL)</option>
+            <option value="Hamingjan, styrkleikar og hópefli">Hamingjan, styrkleikar og hópefli</option>
+            <option value="Skapandi kennsluhættir og leikgleði">Skapandi kennsluhættir og leikgleði</option>
+            <option value="Kynning á núvitund og hugleiðsluaðferðum">Kynning á núvitund og hugleiðsluaðferðum</option>
+            <option value="Evrópskar skólaheimsóknir & Erasmus+">Evrópskar skólaheimsóknir & Erasmus+</option>
+            <option value="Menningarupplifun og sögulegt nám">Menningarupplifun og sögulegt nám</option>
+            <option value="Hópefli og teymisvinna starfsfólks">Hópefli og teymisvinna starfsfólks</option>
+            <option value="Jóga fyrir nemendur og kennara">Jóga fyrir nemendur og kennara</option>
+            <option value="Hagnýt siðfræði í uppeldisstörfum">Hagnýt siðfræði í uppeldisstörfum</option>
+            <option value="Leikur og hreyfing í námi (STPM)">Leikur og hreyfing í námi (STPM)</option>
+            <option value="Gagnrýnin hugsun og heimspeki í skólastarfi">Gagnrýnin hugsun og heimspeki í skólastarfi</option>
+            <option value="Hegðun og úrræði í skólastarfi">Hegðun og úrræði í skólastarfi</option>
+            <option value="Sérsniðið námskeið">Sérsniðið námskeið / Annað</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqName">Nafn tengiliðs</label>
+          <input type="text" id="inqName" class="form-input" placeholder="T.d. Guðrún Jónsdóttir" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqSchool">Skóli / Stofnun</label>
+          <input type="text" id="inqSchool" class="form-input" placeholder="T.d. Laugalækjarskóli" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqEmail">Netfang</label>
+          <input type="email" id="inqEmail" class="form-input" placeholder="gudrun@skoli.is" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqPhone">Símanúmer</label>
+          <input type="tel" id="inqPhone" class="form-input" placeholder="899 0000" required>
+        </div>
+
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="inqNotes">Óskir um dagsetningar, fjölda eða áherslur (valfrjálst)</label>
+          <textarea id="inqNotes" class="form-input" rows="3" placeholder="T.d. 25 kennarar í vinnustofu eða hluti af utanlandsferð..."></textarea>
+        </div>
+
+        <div style="grid-column: 1 / -1; margin-top: 8px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Senda inn fyrirspurn</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <i class="fa-solid fa-circle-check" style="color: var(--color-green); font-size: 1.25rem;"></i>
+    <span id="toastMessage">Takk fyrir! Við höfum samband fljótlega.</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

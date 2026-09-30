@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Endurmenntunarferðir & Smart Teachers Play More | Námsferðir og endurmenntun</title>
+  <title>Forsíða | Endurmenntunarferðir & Smart Teachers Play More</title>
   <meta name="description"
     content="15 ára reynsla af vönduðum námsferðum og endurmenntun fyrir kennara og skólasamfélög. Sérsniðnar námsferðir í Evrópu og innanlands.">
 
@@ -25,13 +25,13 @@
 <body>
 
   <!-- =========================================================================
-    HEADER / NAVIGATION
-    ========================================================================= -->
+       HEADER / NAVIGATION
+       ========================================================================= -->
   <header class="site-header">
     <div class="container-wide header-container">
 
       <!-- Dual Branding -->
-      <a href="#" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
+      <a href="index.html" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
         <div class="brand-logo-main">
           <img src="assets/images/logo.svg" alt="Endurmenntunarferðir" height="42">
         </div>
@@ -44,21 +44,19 @@
 
       <!-- Desktop Navigation -->
       <nav class="nav-desktop" aria-label="Aðalvalmynd">
-        <a href="#hero" class="nav-link">Forsíða</a>
-        <a href="#hvadaleid" class="nav-link">Hvaða leið hentar?</a>
+        <a href="index.html" class="nav-link active">Forsíða</a>
         <a href="afangastadir.html" class="nav-link">Áfangastaðir</a>
-        <a href="#afhverju" class="nav-link">Af hverju okkur?</a>
-        <a href="#ferill" class="nav-link">Námskeið</a>
-        <a href="#london-2026" class="nav-link">London 2026</a>
+        <a href="namskeid.html" class="nav-link">Námskeið</a>
+        <a href="#afhverju" class="nav-link">Um okkur</a>
         <a href="#samband" class="nav-link">Hafa samband</a>
       </nav>
 
       <!-- Right Header Actions -->
       <div class="header-actions">
-        <a href="#samband" class="btn btn-primary btn-sm btn-header-cta">
-          <span>Hafa samband</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <button type="button" class="btn btn-primary btn-sm btn-header-cta open-inquiry-modal" data-destination="Almenn fyrirspurn">
+          <span>Fá tilboð</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
 
         <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Opna valmynd">
           <i class="fa-solid fa-bars"></i>
@@ -81,22 +79,23 @@
       </button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="#hero">Forsíða</a></li>
-      <li><a href="#hvadaleid">Hvaða leið hentar?</a></li>
+      <li><a href="index.html" class="active">Forsíða</a></li>
       <li><a href="afangastadir.html">Áfangastaðir</a></li>
-      <li><a href="#afhverju">Af hverju okkur?</a></li>
-      <li><a href="#ferill">Námskeið</a></li>
-      <li><a href="#london-2026">London 2026 Ráðstefna</a></li>
+      <li><a href="namskeid.html">Námskeið</a></li>
+      <li><a href="#afhverju">Um okkur</a></li>
       <li><a href="#samband">Hafa samband</a></li>
     </ul>
-    <div style="margin-top: auto;">
-      <a href="#samband" class="btn btn-primary" style="width: 100%;">Hafa samband</a>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Almenn fyrirspurn" style="width: 100%; justify-content: center;">
+        <span>Fá tilboð</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
     </div>
   </aside>
 
   <main>
     <!-- =========================================================================
-         SECTION 1: HERO (REFERENCE TEMPLATES 1, 3, 5 COMPOSITION)
+         SECTION 1: HERO SECTION (COVER OF REFERENCE FLYER 1.PNG & 2.PNG)
          ========================================================================= -->
     <section id="hero" class="hero-section">
       <div class="container">
@@ -119,8 +118,7 @@
             </p>
 
             <p class="hero-lead">
-              15 ára reynsla af vönduðum endurmenntunarferðum sérsniðnum að þörfum kennarahópa og gæðanámskeið fyrir
-              kennara og skólasamfélög víðsvegar um Evrópu.
+              15 ára reynsla af endurmenntunarferðum viðsvegar um Evrópu og gæða námskeið fyrir kennara og skólasamfélög.
             </p>
 
             <div class="hero-actions">
@@ -129,17 +127,21 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
               <a href="#london-2026" class="btn btn-outline">
-                <i class="fa-solid fa-calendar-check text-orange" style="color: var(--color-orange);"></i>
+                <i class="fa-solid fa-calendar-check" style="color: var(--color-orange);"></i>
                 <span>London Ráðstefna 2026</span>
               </a>
+              <button type="button" class="btn btn-teal open-inquiry-modal" data-destination="Almenn fyrirspurn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Óska eftir tilboði</span>
+              </button>
             </div>
 
             <!-- Trust proof in hero -->
             <div class="hero-trust-bar">
               <div class="trust-avatar-stack">
-                <img src="assets/images/clare-anthony.webp" alt="Kennari" class="trust-avatar">
-                <img src="assets/images/cristina-aragon-white.webp" alt="Skólastjóri" class="trust-avatar">
-                <img src="assets/images/lesley-quinn.webp" alt="Fyrirlesari" class="trust-avatar">
+                <img src="assets/images/clare-anthony.webp" alt="Clare Anthony" class="trust-avatar">
+                <img src="assets/images/cristina-aragon-white.webp" alt="Cristina Aragon" class="trust-avatar">
+                <img src="assets/images/lesley-quinn.webp" alt="Lesley Quinn" class="trust-avatar">
               </div>
               <div class="trust-text">
                 <span class="trust-highlight">15+ ára reynsla</span> og yfir 100+ ánægðir kennarahópar
@@ -155,20 +157,20 @@
 
             <!-- London Big Ben / Red Bus (Arch Mask) -->
             <div class="hero-mask-london">
-              <img src="assets/images/dest_london_1786354572574.png" alt="London kennaraferðir og Big Ben">
+              <img src="assets/images/destinations/london_westminster_night.jpg" alt="London kennaraferðir og Big Ben">
             </div>
 
             <!-- Alicante Coastline (Wave Organic Mask) -->
             <div class="hero-mask-alicante">
-              <img src="assets/images/dest_alicante_1786354533898.png" alt="Alicante Spáni sól og starfsdagar">
+              <img src="assets/images/destinations/alicante_beach_1790661986760.jpg" alt="Alicante Spáni sól og starfsdagar">
             </div>
 
-            <!-- Berlin Brandenburg Gate / Culture -->
+            <!-- Berlin Cathedral / Culture -->
             <div class="hero-mask-sub">
-              <img src="assets/images/dest_berlin_1786354558996.png" alt="Berlín evrópskar námsferðir">
+              <img src="assets/images/destinations/berlin_cathedral_1790662120108.jpg" alt="Berlín evrópskar námsferðir">
             </div>
 
-            <!-- Floating Orange Graduation Emblem (From Templates 1 & 3) -->
+            <!-- Floating Orange Graduation Emblem (Signature from Brochure Cover) -->
             <div class="hero-floating-emblem" title="Alþjóðleg kennaramenntun">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
@@ -177,7 +179,7 @@
 
         </div>
 
-        <!-- HERO DOCK: 4 QUICK NAVIGATION PILLS (FROM ALL 5 REFERENCE TEMPLATES) -->
+        <!-- HERO DOCK: 4 QUICK NAVIGATION PILLS (EXACT MATCH TO BROCHURE FOOTER STRIP) -->
         <div class="hero-dock-wrapper">
           <div class="hero-dock-bar">
 
@@ -237,7 +239,7 @@
 
     <!-- =========================================================================
          SECTION 2: SERVICES & OFFERINGS: "HVAÐA LEIÐ HENTAR YKKUR?"
-         (REFERENCE TEMPLATES 3 & 4 NUMBERED ASYMMETRIC CARDS)
+         (REFERENCE FLYERS 3.PNG & 4.PNG — THE 4 NUMBERED CORE PATHS)
          ========================================================================= -->
     <section id="hvadaleid" class="services-section">
       <div class="container">
@@ -247,8 +249,8 @@
             <h2 class="heading-section">Hvaða leið hentar ykkur?</h2>
           </div>
           <p class="services-intro" style="margin-left: auto; margin-right: auto;">
-            Við bjóðum sveigjanlegar leiðir sem henta öllum hópum og skólastigum — allt frá heildstæðum pakkaferðum til
-            sérhæfðra vinnustofa.
+            Við skipuleggjum námsferðir og endurmenntun fyrir kennarahópa, starfsfólk skóla og aðra hópa.
+            Allt sniðið að ykkar markmiðum og þörfum.
           </p>
         </div>
 
@@ -272,32 +274,37 @@
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-calendar-days"></i>
                   </div>
-                  <span>Sérsniðin dagskrá miðuð að þörfum ykkar skóla</span>
+                  <span>Sérsniðin dagskrá</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-plane-departure"></i>
                   </div>
-                  <span>Heildstætt ferðaskipulag frá upphafi til enda</span>
+                  <span>Ferðaskipulag frá upphafi til enda</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-school"></i>
                   </div>
-                  <span>Skólaheimsóknir, fyrirlestrar og praktískar vinnustofur</span>
+                  <span>Skólaheimsóknir, fyrirlestrar og vinnustofur</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-handshake"></i>
                   </div>
-                  <span>Íslensk fararstjórn og staðkunnugir sérfræðingar ef óskað er</span>
+                  <span>Íslensk fararstjórn ef óskað er</span>
                 </li>
               </ul>
 
-              <a href="#samband" class="btn btn-primary">
-                <span>Óska eftir tilboði</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.5rem;">
+                <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Pakkaferðir frá A til Ö">
+                  <span>Óska eftir tilboði</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="afangastadir.html" class="btn btn-outline">
+                  <span>Skoða áfangastaði</span>
+                </a>
+              </div>
             </div>
 
             <div class="offering-visual">
@@ -326,32 +333,37 @@
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-users"></i>
                   </div>
-                  <span>Starfsdagar og vinnustofur fyrir allt starfsfólkið</span>
+                  <span>Starfsdagar og vinnustofur</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-tree"></i>
                   </div>
-                  <span>Hópefli, útinám og endurnæring í náttúrunni</span>
+                  <span>Hópefli og útinám</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
-                    <i class="fa-solid fa-lightbulb"></i>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                   </div>
-                  <span>Hagnýt verkfæri og leikir sem nýtast strax í skólastarfi</span>
+                  <span>Hagnýt verkfæri fyrir skólastarf</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-heart"></i>
                   </div>
-                  <span>Dagskrá sniðin að gildum og áherslum ykkar skóla</span>
+                  <span>Dagskrá sniðin að ykkar þörfum</span>
                 </li>
               </ul>
 
-              <a href="#samband" class="btn btn-outline-white">
-                <span>Skoða innanlandstilboð</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.5rem;">
+                <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Endurmenntun á Íslandi">
+                  <span>Skoða innanlandstilboð</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="#samband" class="btn btn-outline-white">
+                  <span>Hafa samband</span>
+                </a>
+              </div>
             </div>
 
             <div class="offering-visual">
@@ -362,7 +374,7 @@
             </div>
           </article>
 
-          <!-- OFFERING 3: Endurmenntun í Evrópu (Cream card on teal background) -->
+          <!-- OFFERING 3: Endurmenntun í Evrópu -->
           <article id="evropu" class="offering-card cream-card">
             <div class="offering-info">
               <div class="offering-header">
@@ -372,7 +384,7 @@
 
               <p class="offering-desc">
                 Frábær kostur fyrir hópa sem vilja velja áfangastaðinn sjálfir og sjá um flug og hótel, en við sjáum um
-                vönduð námskeið, heimsóknir og upplifanir.
+                námskeið, heimsóknir og upplifanir.
               </p>
 
               <ul class="feature-list">
@@ -380,37 +392,43 @@
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-plane"></i>
                   </div>
-                  <span>Hópar sjá sjálfir um flug og gistingu á áfangastað</span>
+                  <span>Hópar sjá sjálfir um flug á áfangastað</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-calendar-check"></i>
                   </div>
-                  <span>Hópar velja sjálfir dagsetningu og tímasetningu ferðar</span>
+                  <span>Hópar velja sjálfir dagsetningu</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-chalkboard-user"></i>
                   </div>
-                  <span>Við sjáum um fyrsta flokks námskeið og hagnýtar vinnustofur</span>
+                  <span>Við sjáum um námskeið og vinnustofur</span>
                 </li>
                 <li class="feature-list-item">
                   <div class="feature-icon-bullet">
                     <i class="fa-solid fa-landmark"></i>
                   </div>
-                  <span>Við skipuleggjum skólaheimsóknir og menningarupplifun</span>
+                  <span>Við sjáum um skólaheimsóknir og menningarupplifun</span>
                 </li>
               </ul>
 
-              <a href="#samband" class="btn btn-teal">
-                <span>Velja áfangastað</span>
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.5rem;">
+                <a href="afangastadir.html" class="btn btn-teal">
+                  <span>Skoða alla áfangastaði</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button type="button" class="btn btn-outline open-inquiry-modal" data-destination="Endurmenntun í Evrópu">
+                  <span>Óska eftir tilboði</span>
+                </button>
+              </div>
             </div>
 
             <div class="offering-visual">
               <div class="curved-mask-3">
-                <img src="assets/images/dest_gdansk_1786354546973.png" alt="Evrópskar borgir og nám í Gdańsk">
+                <img src="assets/images/destinations/gdansk_long_market_1790662148394.jpg"
+                  alt="Evrópskar borgir og nám í Gdańsk">
               </div>
             </div>
           </article>
@@ -423,7 +441,7 @@
                 <div>
                   <h3 class="offering-title">Smart Teachers Play More ráðstefna í London</h3>
                   <div
-                    style="font-family: var(--font-display); font-size: 1.1rem; color: #FFE1A8; font-style: italic; margin-top: 4px;">
+                    style="font-family: var(--font-display); font-size: 1.15rem; color: #FFE1A8; font-style: italic; margin-top: 4px; font-weight: 700;">
                     Move the Body, Engage the Mind
                   </div>
                 </div>
@@ -435,18 +453,18 @@
                 strax í starfi og tækifæri til að hitta kennara víðsvegar frá Evrópu.
               </p>
 
-              <div style="margin-bottom: 2rem;">
+              <div style="margin-bottom: 1.75rem;">
                 <span class="conf-date-pill" style="margin-bottom: 0;">
-                  <i class="fa-solid fa-calendar-days text-orange" style="color: var(--color-orange);"></i>
+                  <i class="fa-solid fa-calendar-days" style="color: var(--color-orange);"></i>
                   <span>13.–14. nóvember 2026</span>
                 </span>
               </div>
 
               <div style="display: flex; flex-wrap: wrap; gap: 14px;">
-                <a href="#london-2026" class="btn btn-primary">
+                <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="London Ráðstefna 2026">
                   <span>Skráning & upplýsingar</span>
                   <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                </button>
                 <button type="button" class="btn btn-outline-white open-qr-modal">
                   <i class="fa-solid fa-qrcode"></i>
                   <span>Skoða QR kóða</span>
@@ -456,7 +474,7 @@
 
             <div class="offering-visual">
               <div class="curved-mask-4">
-                <img src="assets/images/dest_london_1786354572574.png" alt="London ráðstefna 2026 kennarar">
+                <img src="assets/images/destinations/london_westminster_night.jpg" alt="London ráðstefna 2026 kennarar">
               </div>
               <div class="floating-date-badge">
                 <i class="fa-solid fa-ticket"></i>
@@ -488,9 +506,8 @@
             <div class="accent-underline">
               <h2 class="heading-section">Vinsælir áfangastaðir</h2>
             </div>
-            <p class="text-lead" style="max-width: 540px;">
-              Frá sólríkum ströndum Alicante til menningarborganna London, Gdańsk og Berlínar — eða ferskri náttúru
-              Íslands.
+            <p class="text-lead" style="max-width: 580px;">
+              Frá sólríkum ströndum Alicante til menningarborganna London, Gdańsk og Berlínar — eða sérsniðinna námsferða um alla Evrópu.
             </p>
           </div>
 
@@ -501,7 +518,7 @@
             <button class="dest-filter-btn" data-filter="uk">Bretland</button>
             <button class="dest-filter-btn" data-filter="poland">Pólland</button>
             <button class="dest-filter-btn" data-filter="germany">Þýskaland</button>
-            <button class="dest-filter-btn" data-filter="iceland">Ísland</button>
+            <button class="dest-filter-btn" data-filter="custom">Sérsniðið</button>
           </div>
         </div>
 
@@ -510,19 +527,19 @@
           <!-- DEST 1: Alicante -->
           <div class="destination-card" data-category="spain">
             <div class="dest-card-image-wrap">
-              <img src="assets/images/dest_alicante_1786354533898.png" alt="Alicante Spánn">
+              <img src="assets/images/destinations/alicante_beach_1790661986760.jpg" alt="Alicante Spánn strönd og námsferðir">
               <span class="dest-tag-country">Spánn</span>
             </div>
             <div class="dest-card-body">
               <h3 class="dest-card-title">Alicante</h3>
               <p class="dest-card-desc">
                 Sólrík paradís við Miðjarðarhafið. Tilvalið fyrir vinnustofur á ströndinni, skólaheimsóknir,
-                heilsueflingu og endurnærandi samveru.
+                heilsueflingu og endurnærandi samveru í hlýju loftslagi.
               </p>
               <div class="dest-card-footer">
                 <span class="dest-feature-tag">Skólaheimsóknir & sól</span>
-                <a href="#samband" class="dest-link-btn">
-                  <span>Kanna ferð</span>
+                <a href="afangastadir.html#alicante" class="dest-link-btn">
+                  <span>Skoða myndasafn</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
@@ -532,7 +549,7 @@
           <!-- DEST 2: London -->
           <div class="destination-card" data-category="uk">
             <div class="dest-card-image-wrap">
-              <img src="assets/images/dest_london_1786354572574.png" alt="London Bretland">
+              <img src="assets/images/destinations/london_westminster_night.jpg" alt="London Bretland Westminster">
               <span class="dest-tag-country">Bretland</span>
             </div>
             <div class="dest-card-body">
@@ -543,8 +560,8 @@
               </p>
               <div class="dest-card-footer">
                 <span class="dest-feature-tag">Ráðstefna 2026 & skólar</span>
-                <a href="#london-2026" class="dest-link-btn">
-                  <span>Kanna ferð</span>
+                <a href="afangastadir.html#london" class="dest-link-btn">
+                  <span>Skoða myndasafn</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
@@ -554,7 +571,7 @@
           <!-- DEST 3: Gdańsk -->
           <div class="destination-card" data-category="poland">
             <div class="dest-card-image-wrap">
-              <img src="assets/images/dest_gdansk_1786354546973.png" alt="Gdańsk Pólland">
+              <img src="assets/images/destinations/gdansk_long_market_1790662148394.jpg" alt="Gdańsk Pólland Długi Targ">
               <span class="dest-tag-country">Pólland</span>
             </div>
             <div class="dest-card-body">
@@ -565,8 +582,8 @@
               </p>
               <div class="dest-card-footer">
                 <span class="dest-feature-tag">Saga & vinnustofur</span>
-                <a href="#samband" class="dest-link-btn">
-                  <span>Kanna ferð</span>
+                <a href="afangastadir.html#gdansk" class="dest-link-btn">
+                  <span>Skoða myndasafn</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
@@ -576,7 +593,7 @@
           <!-- DEST 4: Berlin -->
           <div class="destination-card" data-category="germany">
             <div class="dest-card-image-wrap">
-              <img src="assets/images/dest_berlin_1786354558996.png" alt="Berlín Þýskaland">
+              <img src="assets/images/destinations/berlin_cathedral_1790662120108.jpg" alt="Berlín Þýskaland Berliner Dom">
               <span class="dest-tag-country">Þýskaland</span>
             </div>
             <div class="dest-card-body">
@@ -587,55 +604,68 @@
               </p>
               <div class="dest-card-footer">
                 <span class="dest-feature-tag">Nýsköpun & menning</span>
-                <a href="#samband" class="dest-link-btn">
-                  <span>Kanna ferð</span>
+                <a href="afangastadir.html#berlin" class="dest-link-btn">
+                  <span>Skoða myndasafn</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- DEST 5: Ísland Innanlands -->
-          <div class="destination-card" data-category="iceland">
+          <!-- DEST 5: Þinn óskastaður? -->
+          <div class="destination-card" data-category="custom">
             <div class="dest-card-image-wrap">
-              <img src="assets/images/course_play_learning_1786354586272.png" alt="Ísland námskeið og starfsdagar">
-              <span class="dest-tag-country">Ísland</span>
+              <img src="assets/images/destinations/custom_canals.jpg" alt="Sérsniðin ferð í Evrópu">
+              <span class="dest-tag-country" style="background-color: var(--color-orange); color: white;">Sérsniðið</span>
             </div>
             <div class="dest-card-body">
-              <h3 class="dest-card-title">Heimavöllur á Íslandi</h3>
+              <h3 class="dest-card-title">Þinn óskastaður?</h3>
               <p class="dest-card-desc">
-                Starfsdagar, hópefli og útinám í heimabyggð eða á völdum stöðum á landinu. Áhersla á vellíðan, samheldni
-                og nýja kennsluhætti.
+                Hafið þið annan áfangastað í huga? Við sníðum námsferðina að ykkar óskum — hvort sem það er Norðurlöndin, Ítalía eða aðrar evrópskar borgir.
               </p>
               <div class="dest-card-footer">
-                <span class="dest-feature-tag">Hópefli & útinám</span>
-                <a href="#samband" class="dest-link-btn">
-                  <span>Kanna ferð</span>
+                <span class="dest-feature-tag">Sérsniðin dagskrá</span>
+                <button type="button" class="dest-link-btn open-inquiry-modal" data-destination="Sérsniðinn áfangastaður">
+                  <span>Óska eftir tilboði</span>
                   <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
 
         </div>
 
+        <!-- Cross-Navigation Banner to Dedicated Destinations Page -->
+        <div class="destinations-cta-strip">
+          <div class="dest-strip-content">
+            <h4>Viltu skoða ítarlega alla áfangastaði og myndasöfn?</h4>
+            <p>Sjáðu kennarahópa í heimsóknum, náttúruupplifun og vinnustofur í Alicante, Berlín, Gdańsk og London.</p>
+          </div>
+          <div>
+            <a href="afangastadir.html" class="btn btn-teal">
+              <span>Skoða alla áfangastaði</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- =========================================================================
-         SECTION 4: WHY CHOOSE US ("AF HVERJU AÐ VELJA OKKUR?" — TEMPLATE 2)
+         SECTION 4: WHY CHOOSE US ("AF HVERJU AÐ VELJA OKKUR?" — REFERENCE FLYER 5.PNG)
          ========================================================================= -->
     <section id="afhverju" class="why-us-section section-spacing">
       <div class="container">
 
         <div class="why-us-grid">
 
-          <!-- Visual: Asymmetric Beach Mask with Organic Shapes -->
+          <!-- Visual: Real Educator Group Photo from Brochure 5.png with Organic Backdrop -->
           <div class="why-us-visual-wrap">
             <div class="why-us-backdrop-shape"></div>
             <div class="why-us-organic-mask">
-              <img src="assets/images/course_play_learning_1786354586272.png"
-                alt="Kennarahópur á námskeiði og vinnustofu">
+              <img src="assets/images/destinations/cta_teachers_group_1790661946108.jpg"
+                alt="Kennarahópur í Alicante með Smart Teachers Play More fána">
             </div>
             <div class="why-us-floating-stat">
               <span class="stat-num">15+</span>
@@ -643,7 +673,7 @@
             </div>
           </div>
 
-          <!-- The 4 Core Trust Pillars (from Template 2) -->
+          <!-- The 4 Core Trust Pillars (Exact Match to Brochure 5.png) -->
           <div class="why-us-content">
             <div class="pillars-card-container">
 
@@ -712,60 +742,55 @@
     </section>
 
     <!-- =========================================================================
-         SECTION 5: PROCESS TIMELINE ("FRÁ HUGMYND AÐ FERÐ: 5 SKREF")
+         SECTION 5: PROCESS ROADMAP ("SKIPULAGIÐ" — 4 STEPS TO A PERFECT TRIP)
          ========================================================================= -->
-    <section id="ferill" class="process-section section-spacing">
+    <section id="skipulagid" class="process-section">
       <div class="container">
 
-        <div class="text-center">
+        <div class="text-center" style="max-width: 680px; margin: 0 auto 36px auto;">
           <div class="accent-underline center">
-            <h2 class="heading-section">Skref fyrir skref að vel heppnaðri námsferð</h2>
+            <h2 class="heading-section">Hvernig virkar ferlið?</h2>
           </div>
-          <p class="text-lead" style="max-width: 650px; margin: 0 auto;">
-            Við gerum skipulag námsferða einfalt, öruggt og skýrt frá fyrsta samtali til eftirfylgni.
+          <p class="text-lead" style="font-size: 1.05rem;">
+            Við gerum skipulagningu námsferða einfalda, faglega og án alls óþarfa álags fyrir skólann.
           </p>
         </div>
 
-        <div class="process-timeline">
+        <div class="process-grid">
 
-          <div class="step-card">
-            <div class="step-number-circle">1</div>
-            <h3 class="step-title">Hafðu samband</h3>
-            <p class="step-desc">
-              Við heyrumst í síma eða tölvupósti, ræðum hugmyndir ykkar, stærð hóps og óskir um áfangastað og áherslur.
+          <!-- Step 1 -->
+          <div class="process-card">
+            <div class="process-num-badge">1</div>
+            <h3 class="process-card-title">Hugmynd & þarfagreining</h3>
+            <p class="process-card-desc">
+              Við heyrumst í síma eða tölvupósti, ræðum markmið ferðarinnar, stærð hóps, áherslur í skólastarfi og óskir um áfangastað.
             </p>
           </div>
 
-          <div class="step-card">
-            <div class="step-number-circle">2</div>
-            <h3 class="step-title">Skipulag & hugmynd</h3>
-            <p class="step-desc">
-              Við vinnum sérsniðna tillögu að ferðatilhögun, námskeiðum, heimsóknum og afþreyingu sem passar ykkar
-              fjárhagsáætlun.
+          <!-- Step 2 -->
+          <div class="process-card">
+            <div class="process-num-badge">2</div>
+            <h3 class="process-card-title">Sérsniðin tillaga</h3>
+            <p class="process-card-desc">
+              Við setjum saman heildstæða dagskrá með flugi, gistingu, vinnustofum og skólaheimsóknum sem passar ykkar fjárhagsáætlun.
             </p>
           </div>
 
-          <div class="step-card">
-            <div class="step-number-circle">3</div>
-            <h3 class="step-title">Sérsniðin dagskrá</h3>
-            <p class="step-desc">
-              Gengið er frá flugi, gistingu, vinnustofum og skólaheimsóknum með skýrri og vel tímasettri dagskrá.
+          <!-- Step 3 -->
+          <div class="process-card">
+            <div class="process-num-badge">3</div>
+            <h3 class="process-card-title">Erasmus+ & kynning</h3>
+            <p class="process-card-desc">
+              Við aðstoðum við styrkumsóknir ef við á, kynningarefni fyrir kennarahópinn og alla nauðsynlega undirbúningsþætti.
             </p>
           </div>
 
-          <div class="step-card">
-            <div class="step-number-circle">4</div>
-            <h3 class="step-title">Ferð & upplifun</h3>
-            <p class="step-desc">
-              Áhyggjulaus og innblásandi námsferð með öruggum bakhjarli og íslenskri fararstjórn ef óskað er.
-            </p>
-          </div>
-
-          <div class="step-card">
-            <div class="step-number-circle">5</div>
-            <h3 class="step-title">Eftirfylgni</h3>
-            <p class="step-desc">
-              Við fylgjum ferðinni eftir með námsgögnum, mati og verkfærum sem nýtast strax í skólastarfinu heima.
+          <!-- Step 4 -->
+          <div class="process-card">
+            <div class="process-num-badge">4</div>
+            <h3 class="process-card-title">Ógleymanleg námsferð</h3>
+            <p class="process-card-desc">
+              Þið njótið ferðarinnar á meðan við sjáum um framkvæmd, faglega vinnu, tengslanet og íslenska fararstjórn ef óskað er.
             </p>
           </div>
 
@@ -775,7 +800,7 @@
     </section>
 
     <!-- =========================================================================
-         SECTION 6: LONDON 2026 CONFERENCE SPOTLIGHT (FROM REFERENCE TEMPLATE 4)
+         SECTION 6: LONDON 2026 CONFERENCE SPOTLIGHT (FROM REFERENCE FLYER 4.PNG)
          ========================================================================= -->
     <section id="london-2026" class="container" style="padding-top: 2rem; padding-bottom: 5rem;">
       <div class="conference-spotlight">
@@ -803,30 +828,30 @@
             </p>
 
             <div class="conf-date-pill">
-              <i class="fa-solid fa-calendar-days text-orange" style="color: var(--color-orange);"></i>
+              <i class="fa-solid fa-calendar-days" style="color: var(--color-orange);"></i>
               <span>13.–14. nóvember 2026</span>
             </div>
 
             <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-              <a href="#samband" class="btn btn-primary">
+              <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="London Ráðstefna 2026">
                 <span>Skrá hóp á ráðstefnu</span>
                 <i class="fa-solid fa-arrow-right"></i>
-              </a>
+              </button>
               <button type="button" class="btn btn-outline-white open-qr-modal">
                 <i class="fa-solid fa-qrcode"></i>
-                <span>Sækja upplýsingar</span>
+                <span>Skoða QR kóða</span>
               </button>
             </div>
           </div>
 
-          <!-- London 2026 QR Code Card (Exact match to Reference 4) -->
+          <!-- London 2026 QR Code Card (Exact Match to Brochure 4.png) -->
           <div>
             <div class="conf-qr-card">
               <h3 class="qr-title">London 2026</h3>
               <p class="qr-desc">Skráning og frekari upplýsingar</p>
 
               <div class="qr-code-box">
-                <!-- Inline SVG QR Code Simulation with Center Icon -->
+                <!-- High Quality Inline SVG QR Code Simulation with Center Icon -->
                 <svg viewBox="0 0 200 200" width="160" height="160">
                   <rect width="200" height="200" fill="#ffffff" rx="8" />
                   <!-- QR Corner Markers -->
@@ -890,98 +915,48 @@
     </section>
 
     <!-- =========================================================================
-         SECTION 7: SOCIAL PROOF & TESTIMONIALS
+         SECTION 7: CALL TO ACTION BANNER ("VILTU VITA MEIRA?" — FROM AFANGASTAÐIR)
          ========================================================================= -->
-    <section class="social-proof-section section-spacing" style="display: none;">
+    <section id="samband-cta" class="cta-banner-section">
       <div class="container">
 
-        <!-- Stats Counter Strip -->
-        <div class="stats-counter-strip">
-          <div class="stat-item">
-            <span class="stat-number">15+</span>
-            <span class="stat-caption">Ára farsæl reynsla</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">100+</span>
-            <span class="stat-caption">Skólar & kennarahópar</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">15+</span>
-            <span class="stat-caption">Áfangastaðir í Evrópu</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">98%</span>
-            <span class="stat-caption">Ánægðir þátttakendur</span>
-          </div>
-        </div>
+        <div class="cta-banner-card">
+          <div class="cta-banner-overlay"></div>
 
-        <div class="text-center" style="margin-bottom: 3.5rem;">
-          <div class="accent-underline center">
-            <h2 class="heading-section">Umsagnir kennara og skólastjórnenda</h2>
-          </div>
-          <p class="text-lead" style="max-width: 580px; margin: 0 auto;">
-            Sjáðu hvað kollegar þínir segja um ferðirnar okkar og faglegan ávinning skólasamfélagsins.
-          </p>
-        </div>
-
-        <div class="testimonials-grid">
-
-          <div class="testimonial-card">
-            <p class="testimonial-quote">
-              „Námsferðin okkar til Alicante var ótrúleg blanda af faglegum vinnustofum og hópefli. Samheldnin í
-              starfsmannahópnum jókst gríðarlega og við komum heim full af nýjum hugmyndum.“
+          <div class="cta-banner-inner">
+            <h2 class="cta-banner-title">Viltu vita meira?</h2>
+            <p class="cta-banner-desc">
+              Hafðu samband við okkur í dag og við hjálpum þér að skipuleggja ógleymanlega ferð fyrir þinn hóp.
             </p>
-            <div class="testimonial-author">
-              <img src="assets/images/clare-anthony.webp" alt="Guðrún Jónsdóttir" class="author-avatar">
-              <div class="author-info">
-                <h5>Guðrún Jónsdóttir</h5>
-                <span>Grunnskólakennari, Reykjavík</span>
-              </div>
+
+            <div class="cta-banner-actions">
+              <button type="button" class="btn-cta-white open-inquiry-modal" data-destination="Almenn fyrirspurn">
+                <span>Hafa samband</span>
+                <span class="icon-circle">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </button>
+
+              <a href="tel:8990769" class="btn btn-outline-white">
+                <i class="fa-solid fa-phone" style="color: var(--color-orange);"></i>
+                <span>Hringja í 899 0769</span>
+              </a>
             </div>
           </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-quote">
-              „Persónuleg þjónusta og skipulag frá upphafi til enda. Allt stóðst eins og stafspakkt væri og
-              skólaheimsóknirnar voru einstaklega lærdómsríkar fyrir okkar kennarateymi.“
-            </p>
-            <div class="testimonial-author">
-              <img src="assets/images/cristina-aragon-white.webp" alt="Sigurður Einarsson" class="author-avatar">
-              <div class="author-info">
-                <h5>Sigurður Einarsson</h5>
-                <span>Aðstoðarskólastjóri, Akureyri</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <p class="testimonial-quote">
-              „Smart Teachers Play More ráðstefnan breytti algjörlega sýn okkar á hreyfingu í kennslustofunni. Ómetanleg
-              tengslamyndun við evrópska kennara sem við nýtum enn í dag.“
-            </p>
-            <div class="testimonial-author">
-              <img src="assets/images/lesley-quinn.webp" alt="Helga Kristjánsdóttir" class="author-avatar">
-              <div class="author-info">
-                <h5>Helga Kristjánsdóttir</h5>
-                <span>Leikskólakennari, Kópavogi</span>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>
     </section>
 
     <!-- =========================================================================
-         SECTION 8: FINAL CTA & CONTACT ("HAFÐU SAMBAND" — TEMPLATE 2)
+         SECTION 8: FINAL CTA & CONTACT ("HAFÐU SAMBAND" — REFERENCE FLYER 5.PNG)
          ========================================================================= -->
     <section id="samband" class="contact-section section-spacing">
       <div class="container">
 
         <div class="contact-grid">
 
-          <!-- Contact Info Box (Exact layout from Template 2) -->
+          <!-- Contact Info Box (Exact layout from Brochure 5.png) -->
           <div class="contact-info-card">
             <div>
               <div class="accent-underline">
@@ -1044,8 +1019,7 @@
               style="background-color: var(--color-cream-light); border-radius: 20px; padding: 18px; border: 1.5px dashed var(--color-orange); display: flex; align-items: center; justify-content: space-between;">
               <div>
                 <span style="font-weight: 800; color: var(--color-navy); display: block;">London 2026</span>
-                <span style="font-size: 0.85rem; color: var(--color-text-muted);">Skráning og dagskrá
-                  ráðstefnunnar</span>
+                <span style="font-size: 0.85rem; color: var(--color-text-muted);">Skráning og dagskrá ráðstefnunnar</span>
               </div>
               <button type="button" class="btn btn-primary btn-sm open-qr-modal">
                 <i class="fa-solid fa-qrcode"></i>
@@ -1058,7 +1032,7 @@
           <!-- Inquiry Form -->
           <div class="inquiry-form-card">
             <h3 class="form-title">Sendu okkur skilaboð</h3>
-            <p class="form-subtitle">Segðu okkur frá áætlunum hópsins og við svörum með hugmyndum og verðtilboði.</p>
+            <p class="form-subtitle">Segðu okkur frá áætlunum hópsins og við svörum með hugmyndum og verðtilboði innan 24 stunda.</p>
 
             <form id="inquiryForm">
               <div class="form-row two-col">
@@ -1078,6 +1052,13 @@
                   <input type="text" id="schoolName" class="form-control" placeholder="Grunnskóli...">
                 </div>
                 <div class="form-group">
+                  <label for="phoneNum">Símanúmer</label>
+                  <input type="tel" id="phoneNum" class="form-control" placeholder="899 0000">
+                </div>
+              </div>
+
+              <div class="form-row two-col">
+                <div class="form-group">
                   <label for="destinationSelect">Áfangastaður sem heillar</label>
                   <select id="destinationSelect" class="form-control">
                     <option value="Alicante">Alicante, Spánn</option>
@@ -1085,29 +1066,27 @@
                     <option value="Gdansk">Gdańsk, Pólland</option>
                     <option value="Berlin">Berlín, Þýskaland</option>
                     <option value="Island">Endurmenntun á Íslandi</option>
-                    <option value="Annað">Annað / Óákveðið</option>
+                    <option value="Sérsniðin">Sérsniðinn áfangastaður</option>
                   </select>
+                </div>
+                <div class="form-group">
+                  <label for="groupSize">Áætlaður fjöldi þátttakenda</label>
+                  <input type="number" id="groupSize" class="form-control" placeholder="t.d. 15" min="1">
                 </div>
               </div>
 
-              <div class="form-row two-col">
-                <div class="form-group">
-                  <label for="groupSize">Áætlaður fjöldi þátttakenda</label>
-                  <input type="number" id="groupSize" class="form-control" placeholder="t.d. 12" min="1">
-                </div>
-                <div class="form-group">
-                  <label for="travelTiming">Áætlaður ferðatími</label>
-                  <input type="text" id="travelTiming" class="form-control" placeholder="t.d. Vor 2025 / Haust 2026">
-                </div>
+              <div class="form-group" style="margin-bottom: 20px;">
+                <label for="travelTiming">Áætlaður ferðatími</label>
+                <input type="text" id="travelTiming" class="form-control" placeholder="t.d. Vor 2026 / Haust 2026">
               </div>
 
               <div class="form-group" style="margin-bottom: 24px;">
                 <label for="messageBody">Skilaboð / Séróskir</label>
-                <textarea id="messageBody" class="form-control"
-                  placeholder="Segðu okkur nánar frá markmiðum ferðarinnar eða óskum..."></textarea>
+                <textarea id="messageBody" class="form-control" rows="3"
+                  placeholder="Segðu okkur nánar frá markmiðum ferðarinnar, námskeiðum eða óskum..."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; justify-content: center;">
                 <span>Senda fyrirspurn</span>
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
@@ -1129,48 +1108,60 @@
       <div class="footer-grid">
 
         <!-- Brand Info -->
-        <div>
-          <div class="brand-group" style="margin-bottom: 12px;">
+        <div class="footer-brand-col">
+          <div class="brand-group" style="margin-bottom: 20px;">
             <div class="brand-logo-main">
-              <img src="assets/images/logo-white.svg" alt="Endurmenntunarferðir" height="40">
+              <img src="assets/images/logo-white.svg" alt="Endurmenntunarferðir" height="42">
             </div>
-            <div class="brand-divider" style="background-color: rgba(255, 255, 255, 0.25);"></div>
+            <div class="brand-divider" style="background-color: rgba(255, 255, 255, 0.2);"></div>
             <div class="brand-stpm">
-              <span class="stpm-title">Smart Teachers</span>
-              <span class="stpm-sub">Play More</span>
+              <span class="stpm-title" style="color: var(--color-white);">Smart Teachers</span>
+              <span class="stpm-sub" style="color: var(--color-orange);">Play More</span>
             </div>
           </div>
-          <p class="footer-brand-text">
-            Sérfræðingar í námsferðum, vinnustofum og endurmenntun fyrir kennara og skólasamfélög í yfir 15 ár.
+          <p class="footer-lead-text">
+            Sérsniðnar námsferðir og gæðaendurmenntun fyrir kennara og skólasamfélög í Evrópu og á Íslandi.
           </p>
+
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Quick Links -->
+        <!-- Flýtileiðir -->
         <div>
           <h4 class="footer-heading">Flýtileiðir</h4>
           <ul class="footer-links-list">
-            <li><a href="#hero">Forsíða</a></li>
-            <li><a href="#hvadaleid">Hvaða leið hentar?</a></li>
-            <li><a href="#afangastadir">Áfangastaðir</a></li>
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="afangastadir.html">Áfangastaðir</a></li>
+            <li><a href="namskeid.html">Námskeið</a></li>
             <li><a href="#afhverju">Af hverju okkur?</a></li>
-            <li><a href="#ferill">Námskeið</a></li>
+            <li><a href="#skipulagid">Skipulagið</a></li>
             <li><a href="#london-2026">London 2026</a></li>
           </ul>
         </div>
 
-        <!-- Destinations -->
+        <!-- Áfangastaðir -->
         <div>
           <h4 class="footer-heading">Áfangastaðir</h4>
           <ul class="footer-links-list">
-            <li><a href="#afangastadir">Alicante, Spánn</a></li>
-            <li><a href="#afangastadir">London, Bretland</a></li>
-            <li><a href="#afangastadir">Gdańsk, Pólland</a></li>
-            <li><a href="#afangastadir">Berlín, Þýskaland</a></li>
-            <li><a href="#afangastadir">Innanlands á Íslandi</a></li>
+            <li><a href="afangastadir.html#alicante">Alicante, Spánn</a></li>
+            <li><a href="afangastadir.html#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="afangastadir.html#gdansk">Gdańsk, Pólland</a></li>
+            <li><a href="afangastadir.html#london">London, Bretland</a></li>
+            <li><a href="afangastadir.html#custom-dest">Þinn óskastaður</a></li>
           </ul>
         </div>
 
-        <!-- Contact & Partners -->
+        <!-- Hafa samband -->
         <div>
           <h4 class="footer-heading">Hafa samband</h4>
           <ul class="footer-links-list">
@@ -1188,7 +1179,7 @@
             </li>
             <li style="margin-top: 14px;">
               <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); display: block;">
-                Evrópsk gæðastaðall í kennaramenntun
+                Evrópskur gæðastaðall í kennaramenntun
               </span>
             </li>
           </ul>
@@ -1273,16 +1264,85 @@
         </div>
 
         <p style="font-size: 0.95rem; color: var(--color-navy-soft); margin-bottom: 20px;">
-          Skannaðu QR kóðann með snjallsímanum þínum eða smelltu á hnappinn hér fyrir neðan til að skoða skráningu og
-          nánari dagskrá.
+          Skannaðu QR kóðann með snjallsímanum þínum eða smelltu á hnappinn hér fyrir neðan til að skoða skráningu og nánari dagskrá.
         </p>
 
-        <a href="#samband" class="btn btn-primary" style="width: 100%;"
+        <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="London Ráðstefna 2026" style="width: 100%; justify-content: center;"
           onclick="document.getElementById('qrModal').classList.remove('active');">
-          <span>Hafa samband vegna skráningar</span>
+          <span>Skrá áhuga á ráðstefnu</span>
           <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Shared Inquiry / Booking Modal (Aligned with afangastadir.html) -->
+  <div id="inquiryModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalInquiryTitle">
+    <div class="modal-window">
+      <button id="closeInquiryModalBtn" class="modal-close-btn" aria-label="Loka glugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="margin-bottom: 20px;">
+        <span class="conf-tag" style="margin-bottom: 8px;">
+          <span>Óskuldbindandi tilboð</span>
+        </span>
+        <h3 id="modalInquiryTitle" style="font-size: 1.6rem; color: var(--color-navy); margin-bottom: 6px;">
+          Hafa samband & óska eftir tilboði
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          Við setjum saman sérsniðna dagskrá og tilboð fyrir þinn hóp innan 24 stunda.
+        </p>
+      </div>
+
+      <form id="destinationInquiryForm" class="inquiry-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="modalDestSelect">Áfangastaður eða leið sem heillar</label>
+          <select id="modalDestSelect" class="form-input" required>
+            <option value="Pakkaferðir frá A til Ö">Pakkaferðir frá A til Ö</option>
+            <option value="Endurmenntun á Íslandi">Endurmenntun á Íslandi</option>
+            <option value="Endurmenntun í Evrópu">Endurmenntun í Evrópu</option>
+            <option value="London Ráðstefna 2026">London Ráðstefna 2026</option>
+            <option value="Alicante">Alicante, Spánn</option>
+            <option value="Berlín">Berlín, Þýskaland</option>
+            <option value="Gdansk">Gdańsk, Pólland</option>
+            <option value="London">London, Bretland</option>
+            <option value="Sérsniðinn áfangastaður">Sérsniðinn áfangastaður / Annað</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqName">Nafn tengiliðs</label>
+          <input type="text" id="inqName" class="form-input" placeholder="T.d. Guðrún Jónsdóttir" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqSchool">Skóli / Stofnun</label>
+          <input type="text" id="inqSchool" class="form-input" placeholder="T.d. Laugalækjarskóli" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqEmail">Netfang</label>
+          <input type="email" id="inqEmail" class="form-input" placeholder="gudrun@skoli.is" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqPhone">Símanúmer</label>
+          <input type="tel" id="inqPhone" class="form-input" placeholder="899 0000" required>
+        </div>
+
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="inqNotes">Óskir um dagsetningar, fjölda eða áherslur (valfrjálst)</label>
+          <textarea id="inqNotes" class="form-input" rows="3" placeholder="T.d. 25 kennarar í vorferð 2026 með áherslu á útinám og skólaheimsóknir..."></textarea>
+        </div>
+
+        <div style="grid-column: 1 / -1; margin-top: 8px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Senda inn fyrirspurn</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 

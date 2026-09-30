@@ -307,5 +307,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 12. Course Filters and Search (for namskeid.html)
+  const courseFilterBtns = document.querySelectorAll('.course-filter-btn');
+  const courseCards = document.querySelectorAll('.course-card');
+  const courseSearchInput = document.getElementById('courseSearchInput');
+
+  function filterCourses() {
+    const activeBtn = document.querySelector('.course-filter-btn.active');
+    const selectedCategory = activeBtn ? activeBtn.getAttribute('data-category') : 'all';
+    const searchQuery = courseSearchInput ? courseSearchInput.value.toLowerCase().trim() : '';
+
+    courseCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category') || '';
+      const cardTitle = card.querySelector('.course-card-title')?.textContent.toLowerCase() || '';
+      const cardDesc = card.querySelector('.course-card-desc')?.textContent.toLowerCase() || '';
+      const cardInstructor = card.querySelector('.course-card-instructor')?.textContent.toLowerCase() || '';
+
+      const matchesCategory = (selectedCategory === 'all' || cardCategory === selectedCategory);
+      const matchesSearch = !searchQuery || 
+        cardTitle.includes(searchQuery) || 
+        cardDesc.includes(searchQuery) || 
+        cardInstructor.includes(searchQuery);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  if (courseFilterBtns.length > 0) {
+    courseFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        courseFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterCourses();
+      });
+    });
+  }
+
+  if (courseSearchInput) {
+    courseSearchInput.addEventListener('input', filterCourses);
+  }
 });
+
 
