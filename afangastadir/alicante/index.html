@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicante | Endurmenntunarferðir & Smart Teachers Play More</title>
+  <meta name="description"
+    content="Alicante á Spáni: Sól, svaladrykkir og spennandi námskeið fyrir kennarahópa og starfsfólk skóla. Kastalagöngur, tapas-hjólaferðir, Tabarca sigling og skólaheimsóknir.">
+
+  <!-- Google Fonts: Outfit (headings) & Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+
+      <!-- Dual Branding -->
+      <a href="../../index.html" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
+        <div class="brand-logo-main">
+          <img src="../../assets/images/logo.svg" alt="Endurmenntunarferðir" height="42">
+        </div>
+        <div class="brand-divider"></div>
+        <div class="brand-stpm">
+          <span class="stpm-title">Smart Teachers</span>
+          <span class="stpm-sub">Play More</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Aðalvalmynd">
+        <a href="../../index.html" class="nav-link">Forsíða</a>
+        <a href="../../afangastadir.html" class="nav-link active">Áfangastaðir</a>
+        <a href="../../namskeid.html" class="nav-link">Námskeið</a>
+        <a href="../../index.html#afhverju" class="nav-link">Um okkur</a>
+        <a href="#samband-cta" class="nav-link">Hafa samband</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm btn-header-cta open-inquiry-modal" data-destination="Alicante">
+          <span>Fá tilboð</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Opna valmynd">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileBackdrop" class="mobile-drawer-backdrop"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Farsíma valmynd">
+    <div class="mobile-drawer-header">
+      <div class="brand-stpm">
+        <span class="stpm-title">Smart Teachers</span>
+        <span class="stpm-sub">Play More</span>
+      </div>
+      <button id="drawerCloseBtn" class="menu-toggle-btn" aria-label="Loka valmynd">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html">Forsíða</a></li>
+      <li><a href="../../afangastadir.html" class="active">Áfangastaðir</a></li>
+      <li><a href="../../namskeid.html">Námskeið</a></li>
+      <li><a href="../../index.html#afhverju">Um okkur</a></li>
+      <li><a href="#samband-cta">Hafa samband</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <button type="button" class="btn btn-primary open-inquiry-modal" style="width: 100%; justify-content: center;" data-destination="Alicante">
+        <span>Fá tilboð</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Breadcrumb Navigation Bar -->
+  <nav class="dest-breadcrumb-bar" aria-label="Brauðmolar">
+    <div class="container dest-breadcrumb-container">
+      <div class="dest-breadcrumb-trail">
+        <a href="../../index.html"><i class="fa-solid fa-house"></i> Forsíða</a>
+        <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
+        <a href="../../afangastadir.html">Áfangastaðir</a>
+        <span class="separator"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="current">Alicante</span>
+      </div>
+
+      <div class="dest-breadcrumb-tag">
+        <span>🇪🇸</span>
+        <span>Spánn · Costa Blanca</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================================
+         1. HERO SECTION: ALICANTE
+         ========================================================================= -->
+    <section class="dest-single-hero" style="background-image: url('../../assets/images/destinations/alicante/alicante_hero_banner.jpg');">
+      <div class="container">
+        
+        <div class="dest-single-badge">
+          <i class="fa-solid fa-sun"></i>
+          <span>Costa Blanca · Sólrík námsferð</span>
+        </div>
+
+        <h1 class="dest-single-title">Alicante</h1>
+
+        <p class="dest-single-subtitle">
+          Sól, svaladrykkir og spennandi námskeið
+        </p>
+
+        <div class="dest-single-pills">
+          <span class="dest-single-pill">
+            <i class="fa-solid fa-plane-departure" style="color: var(--color-orange);"></i>
+            <span>Beint flug frá Íslandi</span>
+          </span>
+          <span class="dest-single-pill">
+            <i class="fa-solid fa-hotel" style="color: var(--color-orange);"></i>
+            <span>Hótel Maya samstarfsaðili</span>
+          </span>
+          <span class="dest-single-pill">
+            <i class="fa-solid fa-temperature-arrow-up" style="color: var(--color-orange);"></i>
+            <span>300+ sólardagar á ári</span>
+          </span>
+          <span class="dest-single-pill">
+            <i class="fa-solid fa-school" style="color: var(--color-orange);"></i>
+            <span>Skólaheimsóknir & STPM námskeið</span>
+          </span>
+        </div>
+
+        <div class="dest-single-actions">
+          <button type="button" class="btn btn-primary open-inquiry-modal" data-destination="Alicante">
+            <span>Fá tilboð</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          
+          <a href="#afthreying" class="btn btn-outline-white">
+            <span>Kanna afþreyingu</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. INTRO SECTION (Overview of Alicante)
+         ========================================================================= -->
+    <section class="dest-intro-section">
+      <div class="container">
+        <div class="dest-intro-card">
+          <p class="dest-intro-lead">
+            Alicante er vinaleg borg á suðausturströnd Spánar sem er þekkt fyrir sínar frábæru sólarstrendur. Miðjarðarhafið leikur við borgina dag hvern í hinu fallega Costa Blanca héraði.
+          </p>
+          <p class="dest-intro-body">
+            Þó svo að Alicante sé þekkt fyrir sólastrendur hefur hún upp á margt fleira að bjóða. Matarmenningin á Alicante er í senn vönduð og spennandi og þá er vinmenningin ekki síðri. Afþreyingarmöguleikar eru einnig fjölmargir og ættu því allir að geta fundið eitthvað við sitt hæfi í þessari sólríku og skemmtilegu borg.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. AFÞREYINGARMÖGULEIKAR SECTION (Featured Activities)
+         ========================================================================= -->
+    <section id="afthreying" class="dest-activities-section" style="background-image: url('../../assets/images/destinations/alicante/alicante_activities_banner.jpg');">
+      <div class="container">
+
+        <div class="dest-activities-header">
+          <span class="dest-activities-tagline">UPPLIFÐU BORGINA AF ALVÖRU</span>
+          <h2 class="dest-activities-title">Ævintýralegir afþreyingarmöguleikar</h2>
+        </div>
+
+        <div class="dest-activities-grid">
+
+          <!-- Activity 1: Gönguferð í kastala -->
+          <div class="dest-activity-card">
+            <div>
+              <div class="dest-activity-icon-wrap">
+                <i class="fa-solid fa-chess-rook"></i>
+              </div>
+              <h3 class="dest-activity-card-title">Gönguferð í kastala</h3>
+              <p class="dest-activity-card-desc">
+                Gönguferð í St Barbara kastalann er innifalin í ferðunum okkar. Þá göngum við frá hótelinu upp á hinn fornfræga kastala sem er kennileiti Alicante. Um 30 mín. gangur er upp í kastalann sem geymir flott útsýni yfir borgina og sjóinn. Þarna er skemmtilegt að sjá hvernig bærinn hefur stækkað og breyst frá 9. öld. Eftir þetta göngum við boðan niður í hinni heillandi gamla bæ sem er einsog leikmynd í Mama Mía.
+              </p>
+            </div>
+            
+            <div class="dest-activity-card-meta">
+              <span class="dest-meta-badge">
+                <i class="fa-regular fa-clock"></i> Lengd: 2 klst.
+              </span>
+              <span class="dest-meta-badge highlight">
+                <i class="fa-solid fa-circle-check"></i> Verð: Innifalið
+              </span>
+            </div>
+          </div>
+
+          <!-- Activity 2: Tapas hjólaferð -->
+          <div class="dest-activity-card">
+            <div>
+              <div class="dest-activity-icon-wrap">
+                <i class="fa-solid fa-bicycle"></i>
+              </div>
+              <h3 class="dest-activity-card-title">Tapas hjólaferð</h3>
+              <p class="dest-activity-card-desc">
+                Juan í Blue Bike býður upp á frábærar Tapas hjólaferðir um Alicante þar sem hann sýnir nokkrar leyndar perlur og segir okkur sögu borgarinnar. Á leiðinni er stoppað á tveimur tapasstöðum þar sem er boðið upp á drykk og tapasrétt. Blue Bike er hjólaleiga nálægt hótelinu og Juan er mjög skemmtilegur og fróður sögumaður.
+              </p>
+            </div>
+
+            <div class="dest-activity-card-meta">
+              <span class="dest-meta-badge">
+                <i class="fa-regular fa-clock"></i> Lengd: 2,5 klst.
+              </span>
+              <span class="dest-meta-badge">
+                <i class="fa-solid fa-tag"></i> Verð: 30 Evrur
+              </span>
+            </div>
+          </div>
+
+          <!-- Activity 3: Sigling -->
+          <div class="dest-activity-card">
+            <div>
+              <div class="dest-activity-icon-wrap">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <h3 class="dest-activity-card-title">Sigling</h3>
+              <p class="dest-activity-card-desc">
+                Þátttakendur geta farið á eigin vegum til eyjunnar Tabarca. Eyjan er algjör ævintýraeyja sem einfalt er að heimsækja. Siglt er með lítilli ferju og tekur siglingin um hálftíma en sigling í Miðjarðarhafinu er upplifun út af fyrir sig. Dagsferðir til Tabarca eru mjög vinsælar enda kjörið að fara þangað til að skoða sig um eða liggja á ströndinni og slaka á. Hægt er að leigja Jetski og keyra út í eyjuna sem er æðislegt.
+              </p>
+            </div>
+
+            <div class="dest-activity-card-meta">
+              <span class="dest-meta-badge">
+                <i class="fa-regular fa-clock"></i> Lengd: 10.00-17.00 (7 klst.)
+              </span>
+              <span class="dest-meta-badge">
+                <i class="fa-solid fa-ticket"></i> Verð: 30 Evrur í ferjuna
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. DETAILS / CONTENT SECTION (The 4 Topics)
+         ========================================================================= -->
+    <section class="dest-highlights-section">
+      <div class="container">
+
+        <div class="dest-highlights-header">
+          <div class="accent-underline center">
+            <h2 class="section-title">Kynntu þér töfra Alicante</h2>
+          </div>
+          <p class="section-subtitle">
+            Frá miðaldasögu kastalans og göngugötum til framúrskarandi skólaheimsókna og gistiaðstöðu.
+          </p>
+        </div>
+
+        <div class="dest-highlights-grid">
+
+          <!-- Subsection 1: Miðaldarstemming við Miðjarðarhafið -->
+          <article class="dest-highlight-card">
+            <div class="dest-highlight-img-wrap">
+              <img src="../../assets/images/destinations/alicante/gallery_santa_cruz_houses.jpg" alt="Gamli bærinn í Alicante og Santa Cruz">
+              <span class="dest-highlight-tag"><i class="fa-solid fa-landmark"></i> Saga & Menning</span>
+            </div>
+            <div class="dest-highlight-body">
+              <h3 class="dest-highlight-title">Miðaldarstemming við Miðjarðarhafið</h3>
+              <p class="dest-highlight-text">
+                Borgin skartar af ólíkum einkennum sem hvert og eitt gefur henni mikið gildi. Fyrst ber að nefna Gamla bæinn en þar sést hvað best hin glæsilega byggingalist sem er einkennandi fyrir þessa gömlu fallegu borg. Í Gamla bænum er kjörið að gæða sér á mat og drykk í afslöppuðu umhverfi, eða einfaldlega tylla sér á bekk og virða fyrir sér mannlífið á sólríkri stund.
+              </p>
+            </div>
+          </article>
+
+          <!-- Subsection 2: Verslaðu í leiðinni -->
+          <article class="dest-highlight-card">
+            <div class="dest-highlight-img-wrap">
+              <img src="../../assets/images/destinations/alicante/gallery_palm_promenade.jpg" alt="Explanada og verslun í Alicante">
+              <span class="dest-highlight-tag"><i class="fa-solid fa-bag-shopping"></i> Verslun & Lífstíll</span>
+            </div>
+            <div class="dest-highlight-body">
+              <h3 class="dest-highlight-title">Verslaðu í leiðinni</h3>
+              <p class="dest-highlight-text">
+                Fjölmargt er í boði þegar kemur að verslun á Alicante. Fjölmargar búðir hjá kaupmanninum á horninu, eins og sagt er, geyma mikið úrval af vörum á mjög góðu verði. Einnig eru stórar verslunarmiðstöðvar á Alicante og má þar helst nefna Plazamur 2 en þar má finna fjölda verslana t.d. HM, Zara, Adidas ofl. Það tekur um fjórar mínútur að ganga frá hótelinu okkar í Plazamar 2. Um 30 mínútna gangur er í aðra stóra verslunarmiðstöð, Gran Vía, og þar má m.a. finna Primark. Leigubíll þangað frá hótelinu kostar tæplega €10. Fyrir íþróttaunnendur má líka nefna Nike Outlet sem er rétt fyrir utan Alicante. Þar er boðið upp á Nike fatnað á mjög góðu verði.
+              </p>
+            </div>
+          </article>
+
+          <!-- Subsection 3: Hotel Maya – þitt nýja heimili! -->
+          <article class="dest-highlight-card">
+            <div class="dest-highlight-img-wrap">
+              <img src="../../assets/images/destinations/alicante/gallery_hotel_pool.jpg" alt="Hótel Maya sundlaug og slökun">
+              <span class="dest-highlight-tag"><i class="fa-solid fa-hotel"></i> Gisting & Vellíðan</span>
+            </div>
+            <div class="dest-highlight-body">
+              <h3 class="dest-highlight-title">Hotel Maya – þitt nýja heimili!</h3>
+              <p class="dest-highlight-text">
+                Hótel Maya er samstarfshótelið okkar. Frábærlega staðsett og vinalegt hótel miðsvæðis á Alicante. Aðeins um 14 mínútna gangur er á ströndina og þar er oft mikið líf og fjör með líflegum börum og veitingastöðum. Kastalinn Santa Barbara er í bakgarði hótelsins og tekur um 30 mínútur að ganga upp á hæsta punkt til að njóta útsýnisins yfir borgina. Einnig er hægt að taka lyftu upp sem kostar €2. Nauðsynlegt er að fá sér göngutúr í gamla bæinn sem er 18 mínútur frá hótelinu. Gestir okkar hafa ávallt verið ánægðir með hótelið og hrósað staðsetningu og þjónustu þess. Sundlaugargarðurinn er sérlega skemmtilegur og þar er frábært að vera í sólbaði og kæla sig svo reglulega í sundlauginni.
+              </p>
+            </div>
+          </article>
+
+          <!-- Subsection 4: Skólaheimsóknir -->
+          <article class="dest-highlight-card">
+            <div class="dest-highlight-img-wrap">
+              <img src="../../assets/images/destinations/alicante/gallery_beach_group.jpg" alt="Kennarahópar og skólaheimsóknir í Alicante">
+              <span class="dest-highlight-tag"><i class="fa-solid fa-graduation-cap"></i> Fræðsla & Skólasamfélag</span>
+            </div>
+            <div class="dest-highlight-body">
+              <h3 class="dest-highlight-title">Skólaheimsóknir</h3>
+              <p class="dest-highlight-text">
+                Endurmenntunarferðir eru í frábæru sambandi við marga skóla á Alicante sem taka vel á móti íslensku skólafólki. Skólarnir eru mismunandi og gefa góða innsýn í þá fjölbreyttu flóru sem er í spænsku skólakerfi. Við bjóðum upp á heimsóknir í alþjóðlega og einkaskóla og ríkisrekna spænska skóla. Gestum gefst kostur á að skoða sig um kynnast öðruvísi skólasamfélagi en þeir eru vanir. Við höfum aðgang að mörgum skólum þannig að hægt að finna skóla við allra hæfi.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. PHOTO GALLERY SECTION (All Alicante photos with lightbox)
+         ========================================================================= -->
+    <section class="dest-gallery-section">
+      <div class="container">
+
+        <div class="dest-gallery-header">
+          <div class="accent-underline center">
+            <h2 class="section-title">Myndasafn frá Alicante</h2>
+          </div>
+          <p class="section-subtitle">
+            Skyggnstu inn í upplifun kennarahópa okkar: ströndin, námskeiðin, kastalinn og suðræn stemmning.
+          </p>
+        </div>
+
+        <div class="dest-gallery-grid-full">
+
+          <!-- 1. Beach Group -->
+          <div class="dest-gallery-item tall lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_beach_group.jpg"
+            data-title="Kennarahópur á ströndinni"
+            data-desc="Kennarahópur í Alicante með Smart Teachers Play More fánann.">
+            <img src="../../assets/images/destinations/alicante/gallery_beach_group.jpg" alt="Kennarahópur á ströndinni í Alicante" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Kennarahópur í Alicante</div>
+            </div>
+          </div>
+
+          <!-- 2. Sand art -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_alicante_sand.jpg"
+            data-title="ALICANTE á ströndinni"
+            data-desc="Litrík skúlptúrstafir í sandinum á Playa del Postiguet.">
+            <img src="../../assets/images/destinations/alicante/gallery_alicante_sand.jpg" alt="Alicante stafir í sandi" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">ALICANTE sandlist</div>
+            </div>
+          </div>
+
+          <!-- 3. Beach Pergola -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_beach_canopy.jpg"
+            data-title="Útinám og samvera við ströndina"
+            data-desc="Hópar njóta skjóls og fersks sjávarlofts á ströndinni.">
+            <img src="../../assets/images/destinations/alicante/gallery_beach_canopy.jpg" alt="Útinám og strandskýli í Alicante" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Samvera við ströndina</div>
+            </div>
+          </div>
+
+          <!-- 4. Castle atop rock -->
+          <div class="dest-gallery-item tall lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_castle_rock.jpg"
+            data-title="Castillo de Santa Bárbara"
+            data-desc="Hinn tignarlegi kastali sem gnæfir yfir borginni á Benacantil kletti.">
+            <img src="../../assets/images/destinations/alicante/gallery_castle_rock.jpg" alt="Santa Barbara kastali á kletti" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Santa Bárbara kastali</div>
+            </div>
+          </div>
+
+          <!-- 5. Santa Cruz houses -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_santa_cruz_houses.jpg"
+            data-title="Barrio de Santa Cruz"
+            data-desc="Litrík hús og sjarmerandi andrúmsloft í gamla bænum.">
+            <img src="../../assets/images/destinations/alicante/gallery_santa_cruz_houses.jpg" alt="Litrík hús í Santa Cruz" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Barrio de Santa Cruz</div>
+            </div>
+          </div>
+
+          <!-- 6. Hillside panoramic view -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_hillside_view.jpg"
+            data-title="Útsýni yfir borgina og Miðjarðarhaf"
+            data-desc="Mögnuð náttúrusýn af kastalaklettinum yfir Alicante og strandlengjuna.">
+            <img src="../../assets/images/destinations/alicante/gallery_hillside_view.jpg" alt="Útsýni yfir Alicante af fjalli" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Útsýni yfir hafið</div>
+            </div>
+          </div>
+
+          <!-- 7. Harbor at dusk -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_harbor_dusk_view.jpg"
+            data-title="Höfnin og borgin í rökkri"
+            data-desc="Kvöldstemmning við smábátahöfnina í Alicante.">
+            <img src="../../assets/images/destinations/alicante/gallery_harbor_dusk_view.jpg" alt="Höfnin í Alicante í rökkri" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Höfnin í rökkri</div>
+            </div>
+          </div>
+
+          <!-- 8. Coast hillside view -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_coast_hillside.jpg"
+            data-title="Postiguet ströndin"
+            data-desc="Gyllt strönd og kristaltært Miðjarðarhafið.">
+            <img src="../../assets/images/destinations/alicante/gallery_coast_hillside.jpg" alt="Strandlengjan við Alicante" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Postiguet ströndin</div>
+            </div>
+          </div>
+
+          <!-- 9. Palm Promenade -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_palm_promenade.jpg"
+            data-title="Explanada de España"
+            data-desc="Pálmatré og hin heimsþekkta mósaíkgöngugata.">
+            <img src="../../assets/images/destinations/alicante/gallery_palm_promenade.jpg" alt="Explanada promenade með pálmum" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Explanada göngugatan</div>
+            </div>
+          </div>
+
+          <!-- 10. Hotel pool -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_hotel_pool.jpg"
+            data-title="Hótel Maya sundlaugargarður"
+            data-desc="Sólbekkir, sundlaug og slökun eftir viðburðaríkan dag.">
+            <img src="../../assets/images/destinations/alicante/gallery_hotel_pool.jpg" alt="Sundlaugargarður á Hótel Maya" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Hótel Maya sundlaug</div>
+            </div>
+          </div>
+
+          <!-- 11. Sunset beach -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_sunset_beach.jpg"
+            data-title="Sólsetur yfir ströndinni"
+            data-desc="Hlý kvöldsól og rólegar öldur við Alicante.">
+            <img src="../../assets/images/destinations/alicante/gallery_sunset_beach.jpg" alt="Sólsetur á Alicante strönd" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Kvöldkyrrð við sjóinn</div>
+            </div>
+          </div>
+
+          <!-- 12. Alley flowers -->
+          <div class="dest-gallery-item lightbox-trigger"
+            data-full="../../assets/images/destinations/alicante/gallery_alley_flowers.jpg"
+            data-title="Blómasund í Santa Cruz"
+            data-desc="Steinlögð sund, litríkir blómapottar og heillandi andrúmsloft.">
+            <img src="../../assets/images/destinations/alicante/gallery_alley_flowers.jpg" alt="Blómasund í gamla bænum" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Blómasund í Santa Cruz</div>
+            </div>
+          </div>
+
+          <!-- 13. City lights night -->
+          <div class="dest-gallery-item lightbox-trigger" style="grid-column: span 2;"
+            data-full="../../assets/images/destinations/alicante/gallery_city_lights_night.jpg"
+            data-title="Borgin upplýst að nóttu"
+            data-desc="Töfrandi kvöldútsýni yfir borgina, kastalann og upplýstar götur Alicante.">
+            <img src="../../assets/images/destinations/alicante/gallery_city_lights_night.jpg" alt="Alicante borgarljós að nóttu" loading="lazy">
+            <div class="dest-gallery-zoom-icon"><i class="fa-solid fa-expand"></i></div>
+            <div class="dest-gallery-overlay">
+              <div class="dest-gallery-caption">Kvöldljós yfir Alicante</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. TESTIMONIALS SECTION ("Ánægðir viðskiptavinir")
+         ========================================================================= -->
+    <section class="dest-testimonials-section">
+      <div class="container">
+
+        <div class="dest-testimonials-header">
+          <div class="accent-underline center">
+            <h2 class="section-title">Ánægðir viðskiptavinir</h2>
+          </div>
+          <p class="section-subtitle">
+            Umsagnir skólastjórnenda og kennara sem hafa ferðast með okkur í námsferðir.
+          </p>
+        </div>
+
+        <div class="dest-testimonials-grid">
+
+          <!-- Testimonial 1: Reykjanesbær -->
+          <div class="dest-testimonial-card-rich">
+            <div>
+              <div class="dest-testimonial-logo-wrap">
+                <img src="../../assets/images/destinations/alicante/card_reykjanes.png" alt="Reykjanesbær skjaldarmerki">
+              </div>
+              <div class="dest-testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dest-testimonial-quote-text">
+                "Við höfum farið með Endurmenntunarferðum tvisvar erlendis í námsferðir. Þjónustan hefur verið til fyrirmyndar. Snögg að svara og allar okkar óskar hafa verið uppfylltar. Öll úrvinnsla td með styrkumsóknir og annað hafa verið frábært."
+              </p>
+            </div>
+            <div class="dest-testimonial-footer">
+              <div class="dest-testimonial-author-title">Leikskólastjóri</div>
+              <div class="dest-testimonial-author-sub">Leikskóli á Reykjanesbæ</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2: Mosfellsbær -->
+          <div class="dest-testimonial-card-rich">
+            <div>
+              <div class="dest-testimonial-logo-wrap">
+                <img src="../../assets/images/destinations/alicante/card_mosfells.png" alt="Mosfellsbær merki">
+              </div>
+              <div class="dest-testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dest-testimonial-quote-text">
+                "Frábærlega vel skipulögð ferð í alla staði. Það eina sem ég þurfti að hugsa um var að koma mínu fólki í rútuna á morgnana. Snilld að það sé búið að skipuleggja allt fyrir mann."
+              </p>
+            </div>
+            <div class="dest-testimonial-footer">
+              <div class="dest-testimonial-author-title">Leikskólastjóri</div>
+              <div class="dest-testimonial-author-sub">Leikskóli í Mosfellsbæ</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3: Njarðvíkurskóli -->
+          <div class="dest-testimonial-card-rich">
+            <div>
+              <div class="dest-testimonial-logo-wrap">
+                <img src="../../assets/images/destinations/alicante/card_njardvik.png" alt="Njarðvíkurskóli merki">
+              </div>
+              <div class="dest-testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="dest-testimonial-quote-text">
+                "Njarðvíkurskóli hefur farið með Endurmenntunarferðum til Alicante og Berlínar. Í báðum ferðunum hafa öll samskipti við Nonna og hans fólk verið til fyrirmyndar, hvort sem það hefur verið fyrir ferðir, á stöðunum eða eftir heimkomu. Þjónustan frábær og Nonni fljótur að bregðast við ýmsum atriðum sem tengjast því að ferðast með stóran starfsmannahóp."
+              </p>
+            </div>
+            <div class="dest-testimonial-footer">
+              <div class="dest-testimonial-author-title">Njarðvíkurskóli</div>
+              <div class="dest-testimonial-author-sub">Reykjanesbær</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. CALL TO ACTION BANNER ("Viltu vita meira?")
+         ========================================================================= -->
+    <section id="samband-cta" class="cta-banner-section">
+      <div class="container">
+
+        <div class="cta-banner-card" style="background-image: url('../../assets/images/destinations/alicante/alicante_cta_banner.jpg');">
+          <div class="cta-banner-overlay"></div>
+
+          <div class="cta-banner-inner">
+            <h2 class="cta-banner-title">Viltu vita meira?</h2>
+            <p class="cta-banner-desc">
+              Ef þú hefur áhuga á að fara í endurmenntunarferð upp á eigin spýtur eða vilt leita eftir tilboði fyrir hópinn þinn geturðu haft samband við okkur og við svörum um hæl! Hlökkum til að heyra frá þér og vonandi verðum við saman sötrandi svaladrykki í sandinum næsta sumar!
+            </p>
+
+            <div class="cta-banner-actions">
+              <button type="button" class="btn-cta-white open-inquiry-modal" data-destination="Alicante">
+                <span>Hafa samband</span>
+                <span class="icon-circle">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </button>
+
+              <a href="tel:8990769" class="btn btn-outline-white">
+                <i class="fa-solid fa-phone" style="color: var(--color-orange);"></i>
+                <span>Hringja í 899 0769</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Mission -->
+        <div class="footer-brand-col">
+          <div class="brand-group" style="margin-bottom: 20px;">
+            <div class="brand-logo-main">
+              <img src="../../assets/images/logo-white.svg" alt="Endurmenntunarferðir" height="42">
+            </div>
+            <div class="brand-divider" style="background-color: rgba(255, 255, 255, 0.2);"></div>
+            <div class="brand-stpm">
+              <span class="stpm-title" style="color: var(--color-white);">Smart Teachers</span>
+              <span class="stpm-sub" style="color: var(--color-orange);">Play More</span>
+            </div>
+          </div>
+
+          <p class="footer-lead-text">
+            EMF og STPM hafa sameinast og starfa undir merkjum STPM. Sérsniðnar námsferðir og gæðaendurmenntun fyrir kennara og skólasamfélög í Evrópu og á Íslandi.
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Flýtileiðir -->
+        <div>
+          <h4 class="footer-heading">Flýtileiðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="../../index.html">Forsíða</a></li>
+            <li><a href="../../afangastadir.html">Áfangastaðir</a></li>
+            <li><a href="../../namskeid.html">Námskeið</a></li>
+            <li><a href="../../index.html#afhverju">Um okkur</a></li>
+            <li><a href="#samband-cta" class="open-inquiry-modal" data-destination="Alicante">Fá tilboð</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Áfangastaðir -->
+        <div>
+          <h4 class="footer-heading">Áfangastaðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" style="color: var(--color-orange); font-weight: 700;">Alicante, Spánn</a></li>
+            <li><a href="../../afangastadir.html#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="../../afangastadir.html#gdansk">Gdańsk, Pólland</a></li>
+            <li><a href="../../afangastadir.html#london">London, Bretland</a></li>
+            <li><a href="../../afangastadir.html#custom-dest">Þinn óskastaður</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Hafa samband -->
+        <div>
+          <h4 class="footer-heading">Hafa samband</h4>
+          <ul class="footer-links-list">
+            <li>
+              <i class="fa-solid fa-phone" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="tel:8990769">899 0769</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:nonni@smartteachersplaymore.com">nonni@smartteachersplaymore.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:sarah@smartteachersplaymore.com">sarah@smartteachersplaymore.com</a>
+            </li>
+            <li style="margin-top: 14px;">
+              <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); display: block;">
+                Evrópskur gæðastaðall í kennaramenntun
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Endurmenntunarferðir & Smart Teachers Play More. Allur réttur áskilinn.
+        </div>
+        <div>
+          Hannað með áherslu á skólaþróun, vellíðan og leikgleði.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       PHOTO LIGHTBOX MODAL
+       ========================================================================= -->
+  <div id="photoLightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Myndastækkun">
+    <div class="lightbox-dialog">
+      <button id="closeLightboxBtn" class="lightbox-close-btn" aria-label="Loka myndaglugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="">
+      </div>
+
+      <div class="lightbox-footer">
+        <div>
+          <h4 id="lightboxTitle" class="lightbox-title"></h4>
+          <p id="lightboxDesc" class="lightbox-desc"></p>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-sm btn-primary open-inquiry-modal" id="lightboxCtaBtn" data-destination="Alicante">
+            <span>Óska eftir tilboði</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       INQUIRY / BOOKING MODAL
+       ========================================================================= -->
+  <div id="inquiryModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalInquiryTitle">
+    <div class="modal-window">
+      <button id="closeInquiryModalBtn" class="modal-close-btn" aria-label="Loka glugga">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="margin-bottom: 20px;">
+        <span class="conf-tag" style="margin-bottom: 8px;">
+          <span>Óskuldbindandi tilboð</span>
+        </span>
+        <h3 id="modalInquiryTitle" style="font-size: 1.6rem; color: var(--color-navy); margin-bottom: 6px;">
+          Hafa samband & óska eftir tilboði
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          Við setjum saman sérsniðna dagskrá og tilboð fyrir Alicante innan 24 stunda.
+        </p>
+      </div>
+
+      <form id="destinationInquiryForm" class="inquiry-form" style="grid-template-columns: 1fr 1fr; gap: 14px;">
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="modalDestSelect">Áfangastaður sem vekur áhuga</label>
+          <select id="modalDestSelect" class="form-input" required>
+            <option value="Alicante" selected>Alicante, Spánn</option>
+            <option value="Berlín">Berlín, Þýskaland</option>
+            <option value="Gdansk">Gdańsk, Pólland</option>
+            <option value="London">London, Bretland</option>
+            <option value="Sérsniðinn áfangastaður">Sérsniðinn áfangastaður / Annað</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqName">Nafn tengiliðs</label>
+          <input type="text" id="inqName" class="form-input" placeholder="T.d. Guðrún Jónsdóttir" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqSchool">Skóli / Stofnun</label>
+          <input type="text" id="inqSchool" class="form-input" placeholder="T.d. Laugalækjarskóli" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqEmail">Netfang</label>
+          <input type="email" id="inqEmail" class="form-input" placeholder="gudrun@skoli.is" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inqPhone">Símanúmer</label>
+          <input type="tel" id="inqPhone" class="form-input" placeholder="899 0000" required>
+        </div>
+
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label" for="inqNotes">Óskir um dagsetningar, fjölda eða áherslur (valfrjálst)</label>
+          <textarea id="inqNotes" class="form-input" rows="3" placeholder="T.d. 20 kennarar í vorferð til Alicante með áherslu á útinám og skólaheimsóknir..."></textarea>
+        </div>
+
+        <div style="grid-column: 1 / -1; margin-top: 8px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <span>Senda inn fyrirspurn</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <i class="fa-solid fa-circle-check" style="color: var(--color-green); font-size: 1.25rem;"></i>
+    <span id="toastMessage">Takk fyrir! Við höfum samband fljótlega.</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>
