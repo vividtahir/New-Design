@@ -42,13 +42,47 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
+            <!-- Desktop Navigation -->
       <nav class="nav-desktop" aria-label="Aðalvalmynd">
         <a href="../index.html" class="nav-link">Forsíða</a>
-        <a href="../afangastadir.html" class="nav-link">Áfangastaðir</a>
+        
+        <div class="nav-dropdown-item">
+          <a href="../afangastadir.html" class="nav-link nav-dropdown-toggle">
+            <span>Áfangastaðir</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="../alicante.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-flag">🇪🇸</span>
+                <span>Alicante, Spánn</span>
+              </a>
+            </li>
+            <li>
+              <a href="../berlin.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-flag">🇩🇪</span>
+                <span>Berlín, Þýskaland</span>
+              </a>
+            </li>
+            <li>
+              <a href="../london.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-flag">🇬🇧</span>
+                <span>London, Bretland</span>
+              </a>
+            </li>
+            <li class="nav-dropdown-divider"></li>
+            <li>
+              <a href="../afangastadir.html" class="nav-dropdown-link">
+                <span class="nav-dropdown-flag"><i class="fa-solid fa-globe" style="color: var(--color-teal); font-size: 0.95rem;"></i></span>
+                <span>Allir áfangastaðir</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <a href="../namskeid.html" class="nav-link">Námskeið</a>
         <a href="../um-okkur.html" class="nav-link">Um okkur</a>
-        <a href="#samband-cta" class="nav-link">Hafa samband</a>
+        <a href="../um-okkur.html#sendu-okkur-linu" class="nav-link">Hafa samband</a>
       </nav>
 
       <!-- Right Header Actions -->
@@ -78,12 +112,21 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-    <ul class="mobile-nav-links">
+        <ul class="mobile-nav-links">
       <li><a href="../index.html">Forsíða</a></li>
-      <li><a href="../afangastadir.html">Áfangastaðir</a></li>
+      <li>
+        <a href="../afangastadir.html">Áfangastaðir</a>
+        <ul class="mobile-sub-menu">
+          <li><a href="../alicante.html">🇪🇸 Alicante, Spánn</a></li>
+          <li><a href="../berlin.html">🇩🇪 Berlín, Þýskaland</a></li>
+          <li><a href="../london.html">🇬🇧 London, Bretland</a></li>
+          <li><a href="../afangastadir.html">Allir áfangastaðir</a></li>
+        </ul>
+      </li>
       <li><a href="../namskeid.html">Námskeið</a></li>
       <li><a href="../um-okkur.html">Um okkur</a></li>
-      <li><a href="#samband-cta">Hafa samband</a></li>
+      <li><a href="../tilbodsbeidni.html">Fá tilboð</a></li>
+      <li><a href="../um-okkur.html#sendu-okkur-linu">Hafa samband</a></li>
     </ul>
     <div style="margin-top: auto; padding-top: 20px;">
       <a href="index.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
@@ -321,17 +364,16 @@
           </div>
         </div>
 
-        <!-- Column 2: Flýtileiðir -->
+                <!-- Column 2: Flýtileiðir -->
         <div>
           <h4 class="footer-heading">Flýtileiðir</h4>
           <ul class="footer-links-list">
             <li><a href="../index.html">Forsíða</a></li>
             <li><a href="../afangastadir.html">Áfangastaðir</a></li>
             <li><a href="../namskeid.html">Námskeið</a></li>
-            <li><a href="index.html" style="color: var(--color-orange); font-weight: 700;">Fá tilboð</a></li>
             <li><a href="../um-okkur.html">Um okkur</a></li>
-            <li><a href="index.html#personuvernd">Persónuverndarstefna</a></li>
-            <li><a href="#samband-cta">Hafa samband</a></li>
+            <li><a href="../tilbodsbeidni.html">Fá tilboð</a></li>
+            <li><a href="../um-okkur.html#sendu-okkur-linu">Hafa samband</a></li>
           </ul>
         </div>
 
@@ -339,11 +381,11 @@
         <div>
           <h4 class="footer-heading">Áfangastaðir</h4>
           <ul class="footer-links-list">
-            <li><a href="../afangastadir/alicante/index.html">Alicante, Spánn</a></li>
-            <li><a href="../afangastadir.html#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="../alicante.html">Alicante, Spánn</a></li>
+            <li><a href="../berlin.html">Berlín, Þýskaland</a></li>
+            <li><a href="../london.html">London, Bretland</a></li>
             <li><a href="../afangastadir.html#gdansk">Gdańsk, Pólland</a></li>
-            <li><a href="../afangastadir.html#london">London, Bretland</a></li>
-            <li><a href="../afangastadir.html#custom-dest">Þinn óskastaður</a></li>
+            <li><a href="../tilbodsbeidni.html">Þinn óskastaður</a></li>
           </ul>
         </div>
 
