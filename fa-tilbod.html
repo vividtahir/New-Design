@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fáðu tilboð fyrir hópinn þinn | Endurmenntunarferðir</title>
+  <meta name="description"
+    content="Fylltu út formið til að fá óskuldbundið tilboð í námsferð fyrir kennara og skólasamfélög til Alicante, Berlínar, Gdansk, London eða annarra áfangastaða.">
+
+  <!-- Google Fonts: Outfit (headings) & Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+
+      <!-- Dual Branding -->
+      <a href="index.html" class="brand-group" aria-label="Endurmenntunarferðir og Smart Teachers Play More">
+        <div class="brand-logo-main">
+          <img src="assets/images/logo.svg" alt="Endurmenntunarferðir" height="42">
+        </div>
+        <div class="brand-divider"></div>
+        <div class="brand-stpm">
+          <span class="stpm-title">Smart Teachers</span>
+          <span class="stpm-sub">Play More</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Aðalvalmynd">
+        <a href="index.html" class="nav-link">Forsíða</a>
+        <a href="afangastadir.html" class="nav-link">Áfangastaðir</a>
+        <a href="namskeid.html" class="nav-link">Námskeið</a>
+        <a href="index.html#afhverju" class="nav-link">Um okkur</a>
+        <a href="#samband-cta" class="nav-link">Hafa samband</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <a href="tilbodsbeidni.html" class="btn btn-primary btn-sm btn-header-cta active">
+          <span>Fá tilboð</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+
+        <button id="menuToggleBtn" class="menu-toggle-btn" aria-label="Opna valmynd">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileBackdrop" class="mobile-drawer-backdrop"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Farsíma valmynd">
+    <div class="mobile-drawer-header">
+      <div class="brand-stpm">
+        <span class="stpm-title">Smart Teachers</span>
+        <span class="stpm-sub">Play More</span>
+      </div>
+      <button id="drawerCloseBtn" class="menu-toggle-btn" aria-label="Loka valmynd">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Forsíða</a></li>
+      <li><a href="afangastadir.html">Áfangastaðir</a></li>
+      <li><a href="namskeid.html">Námskeið</a></li>
+      <li><a href="index.html#afhverju">Um okkur</a></li>
+      <li><a href="#samband-cta">Hafa samband</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="tilbodsbeidni.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <span>Fá tilboð</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         1. HERO SECTION: FÁÐU TILBOÐ FYRIR HÓPINN ÞINN
+         ========================================================================= -->
+    <section class="quote-page-hero" style="background-image: url('assets/images/tilbodsbeidni_hero_banner.jpg');">
+      <div class="container">
+        
+        <div class="quote-hero-badge">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>Óskuldbindandi tilboð · Sérsniðin dagskrá</span>
+        </div>
+
+        <h1 class="quote-hero-title">Fáðu tilboð fyrir hópinn þinn</h1>
+
+        <p class="quote-hero-subtitle">
+          Fjölbreytt og lifandi
+        </p>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. FORM SECTION
+         ========================================================================= -->
+    <section class="quote-request-section" id="tilbod-form-anchor">
+      <div class="container">
+
+        <div class="quote-intro-wrap">
+          <p class="quote-intro-lead">
+            Fylltu formið út hér að neðan til að fá óskuldbundið tilboð fyrir hópinn þinn.
+          </p>
+        </div>
+
+        <div class="quote-form-card">
+          <form id="fullQuoteRequestForm" novalidate>
+
+            <!-- Row 1: Skóli, Nafn tengiliðs, Starfstitill, Netfang (4 columns) -->
+            <div class="quote-form-grid-4">
+              <div class="quote-field-group">
+                <label class="quote-label" for="quoteSchool">Skóli <span class="req">*</span></label>
+                <input type="text" id="quoteSchool" name="school" class="quote-input" placeholder="T.d. Laugalækjarskóli" required>
+              </div>
+
+              <div class="quote-field-group">
+                <label class="quote-label" for="quoteContactName">Nafn tengiliðs <span class="req">*</span></label>
+                <input type="text" id="quoteContactName" name="contact_name" class="quote-input" placeholder="T.d. Sigrún Helgadóttir" required>
+              </div>
+
+              <div class="quote-field-group">
+                <label class="quote-label" for="quoteJobTitle">Starfstitill <span class="req">*</span></label>
+                <input type="text" id="quoteJobTitle" name="job_title" class="quote-input" placeholder="T.d. Deildarstjóri / Kennari" required>
+              </div>
+
+              <div class="quote-field-group">
+                <label class="quote-label" for="quoteEmail">Netfang <span class="req">*</span></label>
+                <input type="email" id="quoteEmail" name="email" class="quote-input" placeholder="sigrun@skoli.is" required>
+              </div>
+            </div>
+
+            <!-- Row 2: Símanúmer, Áætlaður fjöldi þátttakenda (2 columns) -->
+            <div class="quote-form-grid-2">
+              <div class="quote-field-group">
+                <label class="quote-label" for="quotePhone">Símanúmer <span class="req">*</span></label>
+                <input type="tel" id="quotePhone" name="phone" class="quote-input" placeholder="T.d. 899 0000" required>
+              </div>
+
+              <div class="quote-field-group">
+                <label class="quote-label" for="quoteParticipants">Áætlaður fjöldi þátttakenda <span class="req">*</span></label>
+                <input type="text" id="quoteParticipants" name="participants" class="quote-input" placeholder="T.d. 18 kennarar" required>
+              </div>
+            </div>
+
+            <!-- Row 3: Óskatímasetning (1 column) -->
+            <div class="quote-field-group">
+              <label class="quote-label" for="quoteTiming">Óskatímasetning <span class="req">*</span></label>
+              <input type="text" id="quoteTiming" name="timing" class="quote-input" placeholder="T.d. Vor 2026, haust 2026 eða tilteknar dagsetningar..." required>
+            </div>
+
+            <!-- Row 4: Áfangastaður (Checkboxes) -->
+            <div class="quote-field-group">
+              <label class="quote-label">Áfangastaður <span class="req">*</span></label>
+              
+              <div class="quote-dest-options">
+                <label class="dest-choice-pill">
+                  <input type="checkbox" name="destinations[]" value="Alicante">
+                  <span class="dest-choice-box">
+                    <span class="check-indicator"><i class="fa-solid fa-check"></i></span>
+                    <span>Alicante</span>
+                  </span>
+                </label>
+
+                <label class="dest-choice-pill">
+                  <input type="checkbox" name="destinations[]" value="Berlin">
+                  <span class="dest-choice-box">
+                    <span class="check-indicator"><i class="fa-solid fa-check"></i></span>
+                    <span>Berlin</span>
+                  </span>
+                </label>
+
+                <label class="dest-choice-pill">
+                  <input type="checkbox" name="destinations[]" value="Gdansk">
+                  <span class="dest-choice-box">
+                    <span class="check-indicator"><i class="fa-solid fa-check"></i></span>
+                    <span>Gdansk</span>
+                  </span>
+                </label>
+
+                <label class="dest-choice-pill">
+                  <input type="checkbox" name="destinations[]" value="London">
+                  <span class="dest-choice-box">
+                    <span class="check-indicator"><i class="fa-solid fa-check"></i></span>
+                    <span>London</span>
+                  </span>
+                </label>
+
+                <label class="dest-choice-pill">
+                  <input type="checkbox" name="destinations[]" value="Other cities">
+                  <span class="dest-choice-box">
+                    <span class="check-indicator"><i class="fa-solid fa-check"></i></span>
+                    <span>Other cities</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Row 5: Athugasemdir (Textarea) -->
+            <div class="quote-field-group">
+              <label class="quote-label" for="quoteNotes">Athugasemdir</label>
+              <span class="quote-sublabel">Eitthvað fleira sem þú vilt láta fylgja með, nánari upplýsingar, spurningar, skilaboð...</span>
+              <textarea id="quoteNotes" name="notes" class="quote-textarea" rows="4" placeholder="Skrifaðu skilaboð hér..."></textarea>
+            </div>
+
+            <!-- Row 6: Security Question -->
+            <div class="security-question-wrap">
+              <div class="quote-field-group" style="margin-bottom: 0;">
+                <label class="quote-label" for="quoteCaptcha">Öryggisspurning: Hvað er 5 + 10? (skrifaðu tölustafi) <span class="req">*</span></label>
+                <input type="text" id="quoteCaptcha" name="captcha" class="quote-input" placeholder="15" required style="max-width: 240px;">
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="quote-submit-row">
+              <button type="submit" class="btn-quote-submit" id="quoteSubmitBtn">
+                <span>Smelltu hér til að senda</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. CALL TO ACTION BANNER ("Viltu vita meira?")
+         ========================================================================= -->
+    <section id="samband-cta" class="cta-banner-section">
+      <div class="container">
+
+        <div class="cta-banner-card" style="background-image: url('assets/images/destinations/alicante/alicante_cta_banner.jpg');">
+          <div class="cta-banner-overlay"></div>
+
+          <div class="cta-banner-inner">
+            <h2 class="cta-banner-title">Viltu vita meira?</h2>
+            <p class="cta-banner-desc">
+              Ef þú hefur áhuga á að fara í endurmenntunarferð upp á eigin spýtur eða vilt leita eftir tilboði fyrir hópinn þinn geturðu haft samband við okkur og við svörum um hæl! Hlökkum til að heyra frá þér og vonandi verðum við saman sötrandi svaladrykki í sandinum næsta sumar!
+            </p>
+
+            <div class="cta-banner-actions">
+              <a href="#tilbod-form-anchor" class="btn-cta-white">
+                <span>Hafa samband</span>
+                <span class="icon-circle">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </span>
+              </a>
+
+              <a href="tel:8990769" class="btn btn-outline-white">
+                <i class="fa-solid fa-phone" style="color: var(--color-orange);"></i>
+                <span>Hringja í 899 0769</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       4. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand & Mission -->
+        <div class="footer-brand-col">
+          <div class="brand-group" style="margin-bottom: 20px;">
+            <div class="brand-logo-main">
+              <img src="assets/images/logo-white.svg" alt="Endurmenntunarferðir" height="42">
+            </div>
+            <div class="brand-divider" style="background-color: rgba(255, 255, 255, 0.2);"></div>
+            <div class="brand-stpm">
+              <span class="stpm-title" style="color: var(--color-white);">Smart Teachers</span>
+              <span class="stpm-sub" style="color: var(--color-orange);">Play More</span>
+            </div>
+          </div>
+
+          <p class="footer-lead-text">
+            EMF og STPM hafa sameinast og starfa undir merkjum STPM. Sérsniðnar námsferðir og gæðaendurmenntun fyrir kennara og skólasamfélög í Evrópu og á Íslandi.
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Flýtileiðir -->
+        <div>
+          <h4 class="footer-heading">Flýtileiðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Forsíða</a></li>
+            <li><a href="afangastadir.html">Áfangastaðir</a></li>
+            <li><a href="namskeid.html">Námskeið</a></li>
+            <li><a href="tilbodsbeidni.html" style="color: var(--color-orange); font-weight: 700;">Fá tilboð</a></li>
+            <li><a href="index.html#afhverju">Um okkur</a></li>
+            <li><a href="index.html#personuvernd">Persónuverndarstefna</a></li>
+            <li><a href="#samband-cta">Hafa samband</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Áfangastaðir -->
+        <div>
+          <h4 class="footer-heading">Áfangastaðir</h4>
+          <ul class="footer-links-list">
+            <li><a href="afangastadir/alicante/index.html">Alicante, Spánn</a></li>
+            <li><a href="afangastadir.html#berlin">Berlín, Þýskaland</a></li>
+            <li><a href="afangastadir.html#gdansk">Gdańsk, Pólland</a></li>
+            <li><a href="afangastadir.html#london">London, Bretland</a></li>
+            <li><a href="afangastadir.html#custom-dest">Þinn óskastaður</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Hafa samband -->
+        <div>
+          <h4 class="footer-heading">Hafa samband</h4>
+          <ul class="footer-links-list">
+            <li>
+              <i class="fa-solid fa-phone" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="tel:8990769">899 0769</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:nonni@smartteachersplaymore.com">nonni@smartteachersplaymore.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: var(--color-orange); margin-right: 8px;"></i>
+              <a href="mailto:sarah@smartteachersplaymore.com">sarah@smartteachersplaymore.com</a>
+            </li>
+            <li style="margin-top: 14px;">
+              <span style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); display: block;">
+                Evrópskur gæðastaðall í kennaramenntun
+              </span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Endurmenntunarferðir – Allur réttur áskilinn
+        </div>
+        <div>
+          Hannað með áherslu á skólaþróun, vellíðan og leikgleði.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <i class="fa-solid fa-circle-check" style="color: var(--color-green); font-size: 1.25rem;"></i>
+    <span id="toastMessage">Takk fyrir! Við höfum samband fljótlega.</span>
+  </div>
+
+  <!-- Form Validation & Handling Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('fullQuoteRequestForm');
+      const toast = document.getElementById('toastNotice');
+      const toastMsg = document.getElementById('toastMessage');
+
+      function showToast(msg, isError = false) {
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = msg;
+        const icon = toast.querySelector('i');
+        if (icon) {
+          icon.className = isError ? 'fa-solid fa-circle-exclamation' : 'fa-solid fa-circle-check';
+          icon.style.color = isError ? '#e53e3e' : 'var(--color-green)';
+        }
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4500);
+      }
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          // Validate required fields
+          const school = document.getElementById('quoteSchool')?.value.trim();
+          const name = document.getElementById('quoteContactName')?.value.trim();
+          const title = document.getElementById('quoteJobTitle')?.value.trim();
+          const email = document.getElementById('quoteEmail')?.value.trim();
+          const phone = document.getElementById('quotePhone')?.value.trim();
+          const participants = document.getElementById('quoteParticipants')?.value.trim();
+          const timing = document.getElementById('quoteTiming')?.value.trim();
+          const captcha = document.getElementById('quoteCaptcha')?.value.trim();
+
+          const dests = Array.from(form.querySelectorAll('input[name="destinations[]"]:checked')).map(el => el.value);
+
+          if (!school || !name || !title || !email || !phone || !participants || !timing) {
+            showToast('Vinsamlegast fylltu út alla stjörnumerkta reiti (*).', true);
+            return;
+          }
+
+          if (dests.length === 0) {
+            showToast('Vinsamlegast veldu að minnsta kosti einn áfangastað.', true);
+            return;
+          }
+
+          if (captcha !== '15') {
+            showToast('Öryggisspurning: 5 + 10 er 15. Vinsamlegast sláðu inn rétt svar.', true);
+            return;
+          }
+
+          const btn = document.getElementById('quoteSubmitBtn');
+          const origHtml = btn ? btn.innerHTML : '';
+          if (btn) {
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>Sendi fyrirspurn...</span>';
+          }
+
+          setTimeout(() => {
+            if (btn) {
+              btn.disabled = false;
+              btn.innerHTML = origHtml;
+            }
+            form.reset();
+            showToast('Takk fyrir tilboðsbeiðnina! Við höfum samband innan 24 stunda.');
+          }, 1000);
+        });
+      }
+    });
+  </script>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
