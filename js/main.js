@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 5. Inquiry Form Submission & Toast
   const inquiryForm = document.getElementById('inquiryForm');
+  const aboutContactForm = document.getElementById('aboutContactForm');
   const toastNotice = document.getElementById('toastNotice');
   const toastMessage = document.getElementById('toastMessage');
 
@@ -112,23 +113,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }, duration);
   }
 
-  if (inquiryForm) {
-    inquiryForm.addEventListener('submit', (e) => {
+  function setupFormSubmit(formEl, sendingText, successText) {
+    if (!formEl) return;
+    formEl.addEventListener('submit', (e) => {
       e.preventDefault();
-      const submitBtn = inquiryForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
+      const submitBtn = formEl.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.innerHTML : '';
 
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span>Sendi fyrirspurn...</span>';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>${sendingText}</span>`;
+      }
 
       setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-        inquiryForm.reset();
-        showToast('Takk fyrir! Fyrirspurn þín hefur verið send. Við höfum samband fljótlega.');
-      }, 1000);
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalText;
+        }
+        formEl.reset();
+        showToast(successText);
+      }, 900);
     });
   }
+
+  setupFormSubmit(inquiryForm, 'Sendi fyrirspurn...', 'Takk fyrir! Fyrirspurn þín hefur verið send. Við höfum samband fljótlega.');
+  setupFormSubmit(aboutContactForm, 'Sendi skilaboð...', 'Takk fyrir! Skilaboð þín hafa verið send. Við höfum samband fljótlega.');
 
   // 6. Photo Lightbox Modal
   const lightboxModal = document.getElementById('photoLightboxModal');
